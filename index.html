@@ -1,179 +1,574 @@
-# create_all_blog_pages.py
-# Place this file in the root of your GitHub repository, beside index.html.
-# Run: python create_all_blog_pages.py
-# It will create/update all HTML pages inside the blogs/ folder.
-
-from pathlib import Path
-
-ARTICLES = [{'filename': 'when-summer-lost-its-season.html', 'title': 'When Summer Lost Its Season: Remote Work and the End of Tourism&#8217;s Clock', 'category': 'Remote Work · Tourism Economics', 'img_slug': 'when-summer-lost-its-season', 'content_html': '<p>Some of my best ideas arrive when I\'m not even trying to think. Not during meetings, not while staring at spreadsheets — but in quiet, ordinary moments. Like when I\'m brushing my teeth. Or, honestly… sitting in the bathroom.</p>\n  <p>That\'s where this one started.</p>\n  <p>You know how after COVID, a lot of people began working from home? Some discovered that they didn\'t really need the office — just Wi-Fi, coffee, and self-discipline. Companies that once swore remote work would "kill productivity" suddenly realized the opposite: sometimes people worked better when they didn\'t have to commute, dress up, or force conversation near the coffee machine.</p>\n  <p>But this little change — the shift from <em>where</em> we work — quietly started changing something much bigger: <em>how</em> we live.</p>\n\n  <h2>A new kind of traveler</h2>\n  <p>A few months ago, I took a short trip to a coastal city. It was November — not exactly the typical vacation season. The kind of month when beaches are empty, restaurants close early, and souvenir shops wait for next summer.</p>\n  <p>Except this time, it wasn\'t empty at all.</p>\n  <p>There were people everywhere: in cafés, on terraces, walking their dogs near the ocean. But they didn\'t look like tourists. Many had laptops open, earbuds in, and a coffee that kept being refilled. Out of curiosity, I started talking to a few of them.</p>\n  <p>One woman smiled and said, <em>"Oh, I\'m just working remotely for a while. Needed a change of view."</em></p>\n  <p>Another man told me, <em>"I can do my job from anywhere, so I decided anywhere could be here."</em></p>\n  <p>That\'s when it clicked. These weren\'t tourists taking time off work — they were workers who had taken <em>their work</em> with them.</p>\n\n  <h2>The quiet revolution of time</h2>\n  <p>Before, travel had its rhythm. You worked all year, then waited for a small window — summer holidays, Christmas break, or maybe a long weekend — to escape. The tourism industry lived and breathed by that clock.</p>\n  <p>Summer meant high prices, crowded flights, and hotels booked months in advance. Winter meant discounts, empty beaches, and restaurants trying to survive until the next rush.</p>\n  <p>But now, something subtle is happening.</p>\n  <p>When people can work from anywhere, <em>time</em> becomes flexible. The main constraint — "I can only travel when I\'m off work" — begins to fade. You can go to the mountains in March, or the coast in November, and still keep your job going.</p>\n  <p>Economically, that\'s fascinating. If demand for travel spreads across the year, the old pattern of "peak and off-season" starts to blur. Hotels don\'t have to rely on two crazy months to survive. Local workers don\'t need to find another job every winter. Prices stay more stable.</p>\n  <p>Tourism becomes less of a roller coaster — and more of a steady, sustainable rhythm.</p>\n\n  <h2>The new balance</h2>\n  <p>Of course, it\'s not perfect. Not everyone can work remotely. Some jobs still need hands, not keyboards. And even for those who can, there are still limits — internet speed, time zones, family needs.</p>\n  <p>But still, something has changed.</p>\n  <p>The borders between work and life, between weekdays and weekends, between <em>home</em> and <em>away</em>, are melting a little. People are starting to live where they feel good — not just where their office happens to be.</p>\n  <p>And that\'s not just a lifestyle trend. It\'s a quiet economic revolution.</p>\n  <p>If remote work continues to grow, we might one day say goodbye to the very idea of <em>tourism seasonality.</em> Maybe summer will no longer "belong" to tourists. Maybe the world will stop moving in waves of crowds and instead flow smoothly — people arriving, leaving, and working wherever they feel most alive.</p>\n  <p>Maybe one day, we\'ll stop asking, <em>"When\'s the best time to travel?"</em> Because the answer will simply be: <em>"Anytime."</em></p>\n  <p>Who knows — maybe that future starts with one person, sitting in a café, laptop open, realizing that the world has no seasons anymore.</p>\n  <p>Or maybe, as in my case, it starts with an idea that shows up… in the bathroom.</p>'}, {'filename': 'the-economic-profit-of-a-loaf-of-bread.html', 'title': 'The Economic Profit of a Loaf of Bread', 'category': 'Behavioral Economics · Decision Theory', 'img_slug': 'the-economic-profit-of-a-loaf-of-bread', 'content_html': '<p>One sunny afternoon, I was walking home for lunch. It was one of those simple days — not good, not bad — just peacefully ordinary. The streets were quiet, and the air carried that faint smell of warm bread coming from the bakery nearby.</p>\n  <p>As I turned the corner, I passed by the small grocery shop next to my building. I slowed down a little, thinking of home, of lunch waiting on the table. Then a thought came to me — a small, annoying one:</p>\n  <p><em>"Wait… do we still have bread at home?"</em></p>\n  <p>I stopped for a second. No one was home to call and check. It was just me, the warm sunlight, and the big question: <em>to buy or not to buy?</em></p>\n\n  <h2>The bread dilemma</h2>\n  <p>Now, this wasn\'t the first time it happened. Almost every day, I bought bread on my way back, and almost every day, I found some already sitting on the counter. Then by the next morning, we\'d throw away the old ones because they had gone hard.</p>\n  <p>But skipping it wasn\'t always a good idea either. On the days I didn\'t buy any, I\'d open the bread basket, find it empty, and have to go back out again — which I absolutely hate doing after getting comfortable at home.</p>\n  <p>So, there I was, standing in front of the store like a man facing a major life decision, holding an invisible calculator in my head.</p>\n  <p>That\'s when my <em>inner economist</em> woke up. You know that little voice — the rational one, the <em>Homo Economicus</em> we all carry inside, whispering about costs and benefits, even when it\'s about something as ordinary as a loaf of bread.</p>\n\n  <h2>The quick calculation</h2>\n  <p>I started imagining the possibilities:</p>\n  <p>If I buy the bread and there\'s already some at home, I\'ll waste two loaves and two coins. Not the end of the world, but still annoying. Bread from the shop can\'t really be kept — it hardens fast.</p>\n  <p>But if I don\'t buy it and there\'s none at home, I\'ll have to go back out later. That means losing time, walking again under the sun, and spending the same two coins anyway.</p>\n  <p>And let\'s be honest — I\'m a little lazy. If I were already at home and realized there was no bread, I\'d probably ask someone else to get it and give them a small tip. Let\'s say… five coins.</p>\n  <p>So the total loss in that case? Around seven coins.</p>\n  <p>My inner economist smiled. Option A (buy now): risk losing 2 coins. Option B (don\'t buy): risk losing 7. Even if both were equally likely, Option A clearly had the smaller risk. So I took a deep breath, nodded like someone who just solved a serious life equation, and stepped into the shop.</p>\n\n  <h2>The invisible profit</h2>\n  <p>When I got home and opened the bread basket, there it was — two fresh loaves sitting quietly, waiting for me.</p>\n  <p>I laughed to myself. <em>"Well,"</em> I thought, <em>"that\'s two coins gone… but at least I don\'t have to go back out."</em></p>\n  <p>Economically, that\'s called <strong>risk aversion</strong> — choosing the safer path with the smaller potential loss. But it\'s also something deeper: the quiet satisfaction of knowing you made the <em>less annoying</em> choice.</p>\n  <p>Some people think economics is only about money. But for me, that day, it was about <strong>peace of mind</strong>. The comfort of walking home without worrying, the calm of not second-guessing myself later.</p>\n  <p>That\'s what economists call <em>economic profit</em> — the invisible gain you get when your decision brings more satisfaction than its alternatives.</p>\n  <p>So yes, I lost two coins and ended up with too much bread. But I also bought certainty, calm, and an easy afternoon nap after lunch.</p>\n  <p>And honestly, that\'s the kind of profit I\'ll take any day. 🍞</p>'}, {'filename': 'a-stroll-with-inflation.html', 'title': 'A Stroll with Inflation', 'category': 'Macroeconomics · Inflation · Purchasing Power', 'img_slug': 'a-stroll-with-inflation', 'content_html': '<p>One morning, I got into a taxi, and before I could even fasten my seatbelt, the driver sighed and said,</p>\n  <p><em>"Everything\'s become expensive these days… we can\'t even afford a kilo of meat anymore. The prices just keep rising."</em></p>\n  <p>He wasn\'t angry, just tired. It\'s the same sentence I\'ve been hearing from almost everyone lately — in taxis, cafés, grocery stores, even from my parents when I visit.</p>\n  <p>At home, my father often repeats, half nostalgic, half amused:</p>\n  <p><em>"You know, son, thirty years ago, 300 dirhams were enough to feed a family for a week. A hundred used to feel like a fortune."</em></p>\n  <p>I smile politely every time, but I know he\'s right. We\'re all living the same story — the same frustration that the same amount of money buys less and less each year.</p>\n\n  <h2>The quiet conversation we all share</h2>\n  <p>Prices rise quietly, like the tide. You don\'t notice it day by day — only when you go back to buy the same thing and realize it costs a little more.</p>\n  <p>The driver\'s words stayed with me that morning. When I got out of the taxi, I kept thinking: Why does it feel like our money is shrinking while everything else grows taller — rents, bills, groceries, even coffee?</p>\n  <p>That\'s when the economist in me woke up, not to give a lecture, but just to understand this small discomfort we all share.</p>\n\n  <h2>The invisible erosion</h2>\n  <p>If we look at it simply, what\'s really happening is that <strong>the purchasing power of money</strong> — its ability to buy goods and services — is quietly declining over time.</p>\n  <p>Let\'s call it <strong>P</strong>, our purchasing power. And let\'s call our wages <strong>W</strong>, and the price level — that invisible thing that makes everything more expensive — <strong>L</strong>.</p>\n  <p>In an ideal world, as prices (L) rise, wages (W) would rise at the same speed, so that <strong>P stays the same</strong>. In other words, the growth of what we earn would match the growth of what we spend.</p>\n  <p>It\'s like walking up an escalator that\'s moving down. If you walk fast enough, you stay in place. If not, you slide backward, even if you\'re still walking.</p>\n\n  <h2>The ideal balance</h2>\n  <p>Mathematically, economists would say: for purchasing power <strong>P</strong> to stay constant between two moments — say <em>t₀</em> and <em>t₁</em> — the rate of wage growth must equal the rate of price growth.</p>\n  <p>Or more simply:</p>\n  <div class="math-block">W₁ / L₁ = W₀ / L₀</div>\n  <p>That\'s the dream scenario — when what you earn keeps pace with what things cost.</p>\n  <p>But we all know life isn\'t that neat. Wages don\'t rise every month. Markets have their own rules, and salaries are often slow to react — what economists call <em>wage rigidity</em>.</p>\n  <p>Meanwhile, prices? They have no patience. They go up when they want to.</p>\n  <p>So we find ourselves chasing the same balance our parents once had, watching numbers grow on paper but shrink in reality.</p>\n\n  <h2>Walking with inflation</h2>\n  <p>That day, as I walked home from the taxi ride, I thought about how inflation isn\'t just an economic term — it\'s a feeling. It\'s the quiet anxiety that your money is running faster than you can catch it.</p>\n  <p>But understanding it, even just a little, brings calm. Because once you see the mechanism behind it — the relationship between prices, wages, and time — it stops feeling like chaos and starts looking like a pattern.</p>\n  <p>Maybe that\'s what economics really gives us — not control, but clarity.</p>\n  <p>So next time someone says, "Everything\'s getting expensive," I might just smile and answer,</p>\n  <p><em>"Yes, but now we know <strong>why</strong>."</em></p>\n  <p>And then I\'ll still complain about the bread price — because understanding doesn\'t make it cheaper. 🍞😄</p>'}, {'filename': 'the-patience-game.html', 'title': 'The Patience Game', 'category': 'Behavioral Economics · Temporal Discounting', 'img_slug': 'the-patience-game', 'content_html': '<p>One evening, I was sitting with a friend at a small café near the corniche. The waiter brought us two glasses of mint tea, steaming hot and perfectly sweet — the kind that makes you forget you had a long day.</p>\n  <p>We started talking about random things: work, money, plans. Then, out of nowhere, my friend asked me a question that sounded simple but felt like a trap.</p>\n  <p><em>"Okay, Aissam,"</em> he said, smiling. <em>"If I offered you 5,000 dirhams right now, or 6,000 if you wait three months, which one would you take?"</em></p>\n  <p>I laughed. "Honestly? I\'d take the 5,000 now."</p>\n  <p>He nodded, as if he already knew my answer. Then he asked again, but changed the timing a little.</p>\n  <p><em>"Alright. What if I gave you the choice between 5,000 in three months or 6,000 in four months?"</em></p>\n  <p>I paused. That time, the answer felt easier: "In that case, I\'d wait for the 6,000."</p>\n  <p>We both smiled, realizing the funny contradiction in my answers.</p>\n\n  <h2>When the present blinds us</h2>\n  <p>That little mental game isn\'t just a trick; it\'s a whole theory in behavioral economics called <strong>temporal discounting</strong>.</p>\n  <p>It explains why we often prefer smaller rewards now over bigger ones later — a habit economists call <em>present bias.</em></p>\n  <p>When the present is in front of us, it has weight. It feels louder, closer, more real. But when both options are in the future — when "now" isn\'t part of the equation — our brain suddenly becomes wiser, calmer, more rational.</p>\n  <p>It\'s strange, isn\'t it? When the reward is far away, we can be patient. But when it\'s sitting right in front of us, the rational voice disappears, and we become children again, saying, <em>"I want it now."</em></p>\n\n  <h2>The everyday version of the same story</h2>\n  <p>You don\'t need to be in a café to see it happen. Everyday life is full of small versions of the same choice.</p>\n  <p>When you\'re hungry after work, you\'ll probably go for fast food instead of waiting to cook something healthy. But if you think about it in the morning — before you\'re hungry — you\'ll promise yourself:</p>\n  <p><em>"Tonight, I\'ll eat something healthy."</em></p>\n  <p>And you probably believe it when you say it.</p>\n  <p>That\'s because when hunger hasn\'t arrived yet, the <em>present bias</em> is sleeping. You\'re planning in the future, and your rational mind is in charge. But once the smell of fries hits your nose… reason takes a nap.</p>\n\n  <h2>The paradox of waiting</h2>\n  <p>It\'s funny how our brains work. The more distant a reward is, the easier it is to promise ourselves we\'ll wait for it.</p>\n  <p>That\'s why saving money is hard, why diets fail, and why new gym memberships in January often turn into unused cards by March.</p>\n  <p>In Morocco, we say <em>"Sbark 3la khatrek"</em> — be patient, take your time. But our minds are not built for patience. We were made for the thrill of the now.</p>\n  <p>Still, knowing this helps. Because once you understand that your brain is wired this way, you can catch it — you can laugh at yourself when you choose the smaller, faster reward and whisper:</p>\n  <p><em>"I see what you\'re doing, Homo Economicus."</em></p>\n  <p>That night, as I left the café, the air was cool, and the city lights danced on the water. I thought about those imaginary 6,000 dirhams, and for once, I didn\'t rush to choose. I just walked slowly, thinking maybe the secret to life — and economics — is not about the money, but about learning <em>when to wait.</em> 🍃</p>'}, {'filename': 'the-cafe-owner-and-keynes.html', 'title': 'The Café Owner and Keynes', 'category': 'Keynesian Economics · Anticipated Demand', 'img_slug': 'the-cafe-owner-and-keynes', 'content_html': '<p>It was sometime around 2019, before I moved to Canada — a warm evening in <strong>El Jadida</strong>, the kind of coastal calm that makes you want to sit outside and let time pass slowly.</p>\n  <p>I was at my favorite café, the one near the corniche with the noisy TV and the best mint tea in town. The waiter already knew my order — glass of tea, extra mint, less sugar.</p>\n  <p>The Africa Cup of Nations was about to begin, and everyone was talking about football. The terrace was buzzing — chairs scraping the tiles, voices rising, arguments over who would score first.</p>\n  <p>And me? I was there to watch <strong>Barcelona</strong>, as usual. Yes — I\'ve been a Barça fan since the <strong>Ronaldinho</strong> days. That smile, that joy, the magic of his feet — that\'s when football stopped being just a sport for me.</p>\n  <p>As I looked around, I noticed something new. The café was fuller than ever. Dozens of <strong>bright plastic chairs</strong> had appeared out of nowhere, stretching all the way to the sidewalk.</p>\n  <p>I laughed quietly. I knew exactly what was going on.</p>\n\n  <h2>The businessman with a theory</h2>\n  <p><em>Moul l\'qahwa</em> — the café owner — was walking around like a field marshal before a final. A week earlier, none of those chairs existed. But now, there were at least twenty.</p>\n  <p>That\'s when my economist brain woke up.</p>\n  <p>He wasn\'t just preparing for the match — he was unconsciously applying <strong>Keynesian economics</strong>, what we call <em>demande anticipée</em> or <em>anticipated demand.</em></p>\n  <p>Keynes once explained that investors must predict tomorrow\'s demand before they act today, otherwise they risk overproduction or loss. And here was <em>Moul l\'qahwa</em>, the Moroccan version of a Keynesian entrepreneur — expanding his "capacity" because he anticipated a surge in customers once the national team started playing.</p>\n  <p>He had invested before the event — not because demand was already there, but because he <em>believed</em> it would come.</p>\n\n  <h2>A lesson in optimism</h2>\n  <p>I imagined him earlier that week, sitting behind the counter, counting tables and thinking aloud:</p>\n  <p><em>"Tomorrow\'s the Cup. People will come in groups, shouting, drinking tea. I need more chairs."</em></p>\n  <p>So he went to the market, bought the cheapest plastic chairs — not the fancy kind, the <em>"God help your back"</em> kind — and filled the café with them.</p>\n  <p>That\'s <strong>demand anticipation</strong> in action. When entrepreneurs expect higher demand, they invest today to meet it tomorrow. It\'s one of the quiet ways optimism fuels the economy — small actions that multiply into movement.</p>\n\n  <h2>When theory meets reality</h2>\n  <p>Of course, every theory faces the real world. If the national team got eliminated early — and as any Moroccan knows, that risk was always high — the café would empty again. Those new chairs would become just plastic memories stacked in a corner, symbols of the fine line between smart planning and overconfidence.</p>\n  <p>So there I was, a young economist-to-be, sitting in a noisy Moroccan café, sipping mint tea and watching both football and economics unfold before my eyes.</p>\n  <p>Maybe Keynes never imagined his theory being tested in a seaside café before a football match. But if he had spent one night there, I\'m sure he\'d have updated his book with a new chapter called:</p>\n  <p><strong>"The Plastic Chair Principle."</strong></p>'}, {'filename': 'the-bread-the-ports-and-the-price-of-patience.html', 'title': 'The Bread, the Ports, and the Price of Patience', 'category': 'Supply-Side Inflation · Global Trade', 'img_slug': 'the-bread-the-ports-and-the-price-of-patience', 'content_html': '<p>It was around 2021, a strange time in Morocco — right after the long months of lockdowns, when life was slowly coming back to normal. Markets were opening again, cafés were buzzing, and people finally began to breathe after what felt like years indoors.</p>\n  <p>But something else came back too — <strong>the complaints</strong>. You could hear them everywhere: in taxis, at the market, at home.</p>\n  <p><em>"The prices are crazy these days!"</em></p>\n  <p><em>"Even potatoes are expensive now."</em></p>\n  <p><em>"It\'s all politics, I\'m telling you!"</em></p>\n  <p>Everyone had their own explanation — some blamed the government, others blamed "les fils de…" (you know the rest 😅). But deep down, I knew the story was much bigger than one man or one policy.</p>\n\n  <h2>When the prices climb faster than us</h2>\n  <p>I remember sitting at home one evening, watching the news. Prices of basic goods — oil, sugar, flour — were all rising. It felt sudden, but as an economist, I knew it never happens overnight. Prices move like waves: quietly at first, then all at once.</p>\n  <p>Inflation, simply put, is the steady rise in prices over time. But this time, it wasn\'t the usual <em>demand inflation</em> (when people buy too much) — it was something else: <strong>supply inflation</strong>.</p>\n  <p>In other words, prices were rising <em>not because we were buying too much</em>, but because <em>there wasn\'t enough to buy.</em></p>\n\n  <h2>The bread village</h2>\n  <p>Let me explain it the Moroccan way.</p>\n  <p>Imagine you live in a small village, and there\'s only one <em>hanout</em> — one small store. You\'re the only customer who buys bread there, about ten loaves a day. So the shopkeeper always brings eleven, just in case.</p>\n  <p>One day, you travel for a while. The shopkeeper stops bringing bread because you\'re gone. Then you come back suddenly — hungry, craving your usual ten loaves — but he doesn\'t have any left.</p>\n  <p>Now you have to go to the next village to get bread. That means <strong>transport costs</strong>, extra time, maybe even paying a delivery boy. The result? Bread gets more expensive for you.</p>\n  <p>That\'s <em>supply inflation.</em> Not because the bread changed, but because <em>the conditions around it did.</em></p>\n\n  <h2>The world\'s "hanout"</h2>\n  <p>The same thing was happening globally. After the first COVID waves, factories reopened and people started buying again — cars, clothes, electronics, everything. But the global "shopkeeper," also known as <strong>East Asia</strong>, wasn\'t ready yet.</p>\n  <p>Ports were blocked, ships delayed, containers stuck for weeks. Half of the world\'s goods come from that region — so when those ports closed, it was like the only <em>hanout</em> in the world shutting its door.</p>\n  <p>Demand came back fast, but supply was crawling behind. Result: prices rose everywhere — from bread and oil to phones and cars.</p>\n\n  <h2>A passing cloud</h2>\n  <p>So yes, prices were rising, but not because of "bad guys" or conspiracies. It was just the economy trying to breathe again after a storm — like a crowded market reopening after a long rain.</p>\n  <p>I remember telling a friend at that time:</p>\n  <p><em>"This kind of inflation is like a passing cloud. Once supply catches up with demand, the sky clears again."</em></p>\n  <p>Because in our small village example, once you\'re back home for good, the shopkeeper will start ordering bread again. Slowly, things will balance out.</p>\n  <p>That\'s the rhythm of the market — chaotic at first, then calm again.</p>\n  <p>Inflation, too, has its moods. Sometimes it\'s a monster; sometimes, just a hungry customer waiting for the baker to open the oven. 🍞</p>'}, {'filename': 'the-day-oil-was-worth-less-than-nothing.html', 'title': 'The Day Oil Was Worth Less Than Nothing', 'category': 'Oil Markets · Financial Economics', 'img_slug': 'the-day-oil-was-worth-less-than-nothing', 'content_html': '<p>It was April 2020, right in the middle of the pandemic — those long, silent days when time had no shape and the streets of Morocco were half empty. I remember scrolling through the news after <em>iftar</em>, sipping my mint tea, when I read something that didn\'t make sense.</p>\n  <p><em>"The price of American crude oil has dropped below zero."</em></p>\n  <p>I blinked twice. <em>Below zero?</em> How could something be worth less than nothing?</p>\n\n  <h2>The strange news</h2>\n  <p>That night, the group chats were on fire. Everyone was sharing the same meme:</p>\n  <p><em>"If oil is negative, why can\'t I fill my car for free?"</em></p>\n  <p>Even my uncle, who doesn\'t usually care about markets, called me laughing: <em>"So, Aissam, should I buy a barrel and store it in the garage?"</em></p>\n  <p>I smiled, but my economist brain started racing. This wasn\'t a joke. Something historic was happening.</p>\n  <p>For the first time since 1929, the price of <strong>American oil</strong> had gone <em>negative</em>. Producers weren\'t just giving oil away — they were literally <strong>paying people to take it</strong>.</p>\n\n  <h2>A little background</h2>\n  <p>There are three main types of oil in the world: <strong>Brent</strong> (the European standard), <strong>Dubai Light</strong> (for the Middle East and Asia), and <strong>West Texas Intermediate (WTI)</strong> (the American one).</p>\n  <p>Now, the American story has a twist. The U.S. has two kinds of oil: one heavy, hard to export, and one light and easy to move — <strong>shale oil</strong>, or <em>pétrole de schiste.</em></p>\n  <p>When Donald Trump became president, he wanted to turn the U.S. from an oil importer into an exporter. So he poured money — more than <strong>$400 billion</strong> — into shale oil, a type that\'s costly to extract but full of promise.</p>\n  <p>Everything was fine… until the pandemic arrived.</p>\n\n  <h2>When the world stopped</h2>\n  <p>In March 2020, planes stopped flying, factories slowed down, cars disappeared from the streets. Suddenly, the world didn\'t need as much oil anymore.</p>\n  <p>But oil production doesn\'t stop as easily as traffic lights. The pumps kept running, barrels kept filling, and storage tanks in <strong>Texas</strong> began to overflow.</p>\n  <p>Here\'s the problem: storing oil is expensive. When you have no space left and you still have barrels arriving every day, you face a strange choice — pay someone to take it away.</p>\n  <p>That\'s how the price dropped below zero.</p>\n  <p>Imagine someone saying: <em>"Take this barrel of oil… and I\'ll give you $30 for your trouble."</em> Absurd, but true.</p>\n\n  <h2>The hidden cause: futures contracts</h2>\n  <p>To understand it fully, you have to know about <strong>futures contracts</strong> — agreements to buy or sell something later at a fixed price.</p>\n  <p>In April 2020, traders who had bought oil contracts for <strong>May delivery</strong> realized they had a big problem: the oil was coming, but they had nowhere to store it.</p>\n  <p>Storage in Texas was full, ports were closed, and no one was driving. So they started selling those contracts as fast as they could — even if it meant losing money.</p>\n  <p>That\'s how the price hit negative territory. It wasn\'t that oil lost its value forever — it was that <em>nobody wanted to pay to keep it.</em></p>\n\n  <h2>Back home in Morocco</h2>\n  <p>And the big question everyone asked: <em>"So, will fuel prices drop here too?"</em></p>\n  <p>I laughed. That\'s the Moroccan reflex — we see global chaos and still hope to save a few dirhams at the pump.</p>\n  <p>But the answer was simple: No, this had nothing to do with us. The negative prices were a short-term financial phenomenon linked to American storage and contracts — not something that would travel across oceans and magically make our gas cheaper.</p>\n  <p>So I closed my laptop, finished my tea, and whispered to myself with a smile:</p>\n  <p><em>"Relax. The world is strange, but the hanout still sells bread at the same price."</em></p>'}, {'filename': 'black-gold-between-uncertainty-supply-and-the-opec-games.html', 'title': 'Black Gold Between Uncertainty, Supply, and the OPEC Games', 'category': 'Oil Markets · OPEC · Geopolitics', 'img_slug': 'black-gold-between-uncertainty-supply-and-the-opec-games', 'content_html': '<p>It was November 2021, just as the world was starting to breathe again after almost two years of lockdowns. Airports were reopening, lights were coming back on in cafés, and traffic — that endless soundtrack of life — was back in full force.</p>\n  <p>And with that return came something else: <strong>the rise of oil prices.</strong></p>\n  <p>Every day, the headlines spoke about new highs — prices reaching levels not seen since 2018, even 2015. For a world trying to recover, that was not good news.</p>\n  <p>But deep down, as an economist, I knew this rise was not random. It was the natural response to years of imbalance between <strong>supply and demand</strong>.</p>\n\n  <h2>After the storm</h2>\n  <p>For almost two years, the oil market had been on a roller coaster. During the pandemic, demand fell faster than anyone could have imagined. Factories stopped, planes grounded, cars parked — the world simply paused.</p>\n  <p>Oil prices collapsed, reaching $18 a barrel, and then — unbelievably — below zero in April 2020. (Yes, that strange story where producers had to <em>pay</em> people to take their oil — I already told you about that one in the previous chapter.)</p>\n  <p>But by late 2021, life was returning. People were driving again, traveling again, buying again. Demand was recovering — and the world expected supply to follow.</p>\n  <p>Everyone thought balance would return by January 2022.</p>\n\n  <h2>Enter OPEC: the masters of the game</h2>\n  <p>Then came <strong>November 4th, 2021</strong>. The Organization of Petroleum Exporting Countries — <em>OPEC</em> — held a meeting that everyone was watching.</p>\n  <p>Countries like <strong>Saudi Arabia</strong> and <strong>Russia</strong>, the heavyweights of oil production, decided <em>not</em> to increase their output — even though demand was rising fast.</p>\n  <p>It was a strategic move. The U.S. and Japan were pushing hard, asking OPEC to pump more oil to ease global prices. But OPEC, as usual, played its own game — calm, patient, confident.</p>\n  <p>That decision sent prices even higher, and it reminded me of an old truth: the oil market isn\'t just about economics — it\'s about <strong>power.</strong></p>\n\n  <h2>The silent chessboard</h2>\n  <p>The United States, though a major producer thanks to shale oil, still relies on global prices. When Trump was in power, he would simply call Saudi Arabia directly, publicly demanding more production. Biden, on the other hand, had to play diplomacy — quieter, slower, less theatrical.</p>\n  <p>So, while politicians exchanged polite statements, millions of people around the world watched fuel prices climb again. And once again, oil reminded us who still rules the economy.</p>\n  <p>OPEC\'s message was clear: <em>"We control the tap. We open it when we want. We close it when we must."</em></p>\n\n  <h2>The bigger question</h2>\n  <p>That night, I sat at my desk and asked myself a simple question: <strong>How long will the global economy keep dancing to the rhythm of oil?</strong></p>\n  <p>We talk about renewable energy — solar, wind, even nuclear — but together they still make up barely <strong>10%</strong> of the world\'s total energy mix. The rest still depends on oil and gas — <em>black gold.</em></p>\n  <p>And the logic is simple: demand for oil is driven by two main forces — the <strong>global population</strong>, which keeps growing, and <strong>renewable energy</strong>, which grows slowly but still can\'t replace fossil fuels. As long as more people are born than solar panels are built, the equation stays tilted in oil\'s favor.</p>\n\n  <h2>Between hope and habit</h2>\n  <p>So, we keep driving, producing, and consuming — hoping for greener energy, but still running on black gold. OPEC knows it, markets know it, and deep down, we all do too.</p>\n  <p>The world says it wants clean energy, but every time oil prices rise, we panic — as if our hearts were still pumping petroleum.</p>\n  <p>Maybe one day, we\'ll look back at this time as the last era of dependence — but for now, OPEC still holds the remote, and the rest of us are just watching the screen. 🛢️</p>'}, {'filename': 'crisis-or-risk-the-world-between-hope-and-the-omicron-shadow.html', 'title': 'Crisis or Risk: The World Between Hope and the Omicron Shadow', 'category': 'Risk &amp; Uncertainty · Global Economy', 'img_slug': 'crisis-or-risk-the-world-between-hope-and-the-omicron-shadow', 'content_html': '<p>It was late November 2021. Across the world, everyone was finally starting to believe that 2022 would bring some peace — that the economy would finally catch its breath after two years of pandemic shock.</p>\n  <p>Reports from the World Bank, the IMF, and other organizations were full of optimism. Charts, forecasts, recovery plans — all pointing in the same direction: <em>"By early 2022, production will return to pre-COVID levels."</em></p>\n  <p>It felt like the world was preparing for a quiet comeback.</p>\n  <p>Then, out of nowhere, came a name no one expected: <strong>Omicron.</strong></p>\n\n  <h2>When hope meets surprise</h2>\n  <p>News of a new COVID variant spread faster than the virus itself. Governments called emergency meetings, airports began closing, and headlines turned dark again. For a few weeks, it felt like déjà vu — as if we\'d been dropped back into 2020 overnight.</p>\n  <p>What made Omicron different wasn\'t just its biology — it was its <em>timing.</em></p>\n  <p>The world had just started hoping. Businesses were reopening, travelers were booking flights, investors were predicting growth. And then suddenly — uncertainty returned.</p>\n  <p>That\'s when I remembered something I learned back in university:</p>\n  <p>A <strong>risk</strong> is something you can measure. A <strong>crisis</strong> is what happens when you can\'t.</p>\n\n  <h2>The difference between risk and crisis</h2>\n  <p>Economically speaking, a <em>risk</em> is predictable — like a possible drop in prices or a small market correction. You can estimate it, model it, prepare for it.</p>\n  <p>But a <em>crisis</em>? A crisis is the unexpected — the event no one saw coming. That\'s why economists call it <em>"crise"</em> and not <em>"risque."</em></p>\n  <p>Omicron was exactly that. No model could have predicted it, and yet in just two days, it erased months of optimism. Stock markets fell, flights were canceled, and oil prices — which had been climbing for weeks — plunged back to September levels.</p>\n  <p>All because of a single word in the news: <em>variant.</em></p>\n\n  <h2>The fragile balance of information</h2>\n  <p>This episode reminded me of something deeper: how fragile global confidence really is, and how powerful <strong>information</strong> has become in modern economics.</p>\n  <p>Only two weeks earlier, we were talking about high oil prices for two reasons: rising demand driven by speculators betting that 2022 would be the year of recovery, and OPEC\'s decision not to increase production despite growing global demand.</p>\n  <p>Everyone was sure the worst was behind us.</p>\n  <p>Then came one announcement — <em>"a new variant detected"</em> — and all that optimism collapsed. Investors pulled back, demand expectations shrank, and oil prices fell within hours.</p>\n  <p>The world didn\'t even know if Omicron was dangerous yet. Uncertainty alone was enough to freeze everything.</p>\n\n  <h2>The week of waiting</h2>\n  <p>For the next few weeks, the world waited. Scientists rushed to study the new variant, investors watched the news like gamblers holding their breath, and governments tried to sound calm while quietly updating their restrictions.</p>\n  <p>I remember thinking that week: Economics isn\'t just about production or money — it\'s about <strong>trust</strong>.</p>\n  <p>When trust disappears, markets stop moving, investments pause, and people retreat.</p>\n\n  <h2>The quiet realization</h2>\n  <p>In the end, what I took from that episode wasn\'t just another lesson in macroeconomics, but in <em>human psychology.</em></p>\n  <p>We live in a world where a single news alert can shake entire economies — where confidence is as valuable as oil, and fear spreads faster than inflation.</p>\n  <p>That day, I closed my laptop, looked out the window, and thought:</p>\n  <p><em>"Maybe the real difference between a risk and a crisis isn\'t how big it is — but how ready we are to face it."</em></p>'}, {'filename': 'from-health-crisis-to-stagflation.html', 'title': 'From Health Crisis to Stagflation?', 'category': 'Macroeconomics · Stagflation · Economic Policy', 'img_slug': 'from-health-crisis-to-stagflation', 'content_html': '<p>It was early 2022, and the world was trying, once again, to stand up straight after the storm. Borders were open again, flights were full, cafés were noisy, and for the first time in two years, people began to talk about the <em>future</em> instead of the <em>pandemic.</em></p>\n  <p>But the optimism didn\'t last long.</p>\n  <p>Prices were rising everywhere — faster than anyone had expected. Fuel, gas, wheat, cooking oil — everything was climbing. The world\'s biggest economies were watching inflation numbers they hadn\'t seen in decades.</p>\n  <p>The data spoke for itself: fuel and gas prices up by nearly <strong>30%</strong>, basic food products up by <strong>32%</strong> compared to the previous year, according to the FAO.</p>\n  <p>And yet, economic growth was slowing down.</p>\n\n  <h2>The new fear</h2>\n  <p>That strange combination — <strong>high inflation</strong> with <strong>weak or negative growth</strong> — began to remind economists of something they hadn\'t said aloud in years: <em>stagflation.</em></p>\n  <p>The last time the world faced it was in the 1970s, during the great oil crisis. Back then, factories were closing, prices were soaring, and unemployment kept rising — the perfect storm that broke the old economic models.</p>\n  <p>Now, half a century later, people were asking the same question again: <em>"Are we heading back there?"</em></p>\n\n  <h2>Reading the signs</h2>\n  <p>I remember looking at a chart published by DWS, one of the largest investment firms in the U.S. It showed the long dance between <strong>economic growth</strong> and <strong>inflation</strong> since 1950.</p>\n  <p>In that chart, the "gap" between the two lines — growth and inflation — tells the story. When growth falls and inflation rises, the gap widens — and that\'s where stagflation lives.</p>\n  <p>For now, the U.S. and other economies were still far from the chaos of the 1970s. But the signs were there. If the imbalance between <strong>supply and demand</strong> continued — if production couldn\'t catch up, and if energy shortages persisted — the gap could widen again.</p>\n  <p>And once it starts widening, it\'s hard to stop.</p>\n\n  <h2>The economist\'s dilemma</h2>\n  <p>To fight inflation, governments usually raise interest rates or reduce money supply. But to fight low growth, they have to do the opposite — inject more money into the economy to stimulate demand.</p>\n  <p>In other words, one problem\'s solution often feeds the other.</p>\n  <p>Add more money → you risk <em>more inflation.</em> Cut spending → you risk <em>slower growth.</em></p>\n  <p>It\'s like trying to drive a car with one foot on the gas and one on the brake.</p>\n\n  <h2>Between logic and life</h2>\n  <p>As I read the reports and watched the graphs, I realized something simple yet uncomfortable: Economics, at its core, is about trying to make sense of human behavior — and humans are rarely rational.</p>\n  <p>Markets panic. People overreact. Predictions fail.</p>\n  <p>And just when you think you understand the pattern, the pattern changes.</p>\n  <p>That\'s why, by the end of that day, as I closed my laptop, I smiled and whispered to myself:</p>\n  <p><em>"All scenarios are possible in a science that doesn\'t believe in rationality."</em></p>'}, {'filename': 'greshams-law-two-hundred-years-later.html', 'title': 'Gresham&#8217;s Law: Two Hundred Years Later', 'category': 'Monetary Economics · Currency Theory', 'img_slug': 'greshams-law-two-hundred-years-later', 'content_html': '<p>It was one of those quiet afternoons when I went out to pay a small bill at a neighborhood shop. I had a few coins, some notes, and my bank card — the usual mix we all carry without thinking.</p>\n  <p>As I handed the money over, a strange thought crossed my mind: <em>"What if I tried to pay with gold instead?"</em></p>\n  <p>I smiled at the idea. Gold — the eternal symbol of value — yet nobody around me had ever used it to buy anything. Not for groceries, not for gas, not even for coffee.</p>\n  <p>So I asked myself: <strong>Why do we all use paper, cards, and numbers on a screen — but never gold or silver anymore?</strong></p>\n\n  <h2>The simple truth behind an old law</h2>\n  <p>The answer goes back more than two centuries, to something economists call <strong>Gresham\'s Law</strong>. It says:</p>\n  <blockquote>When two forms of money circulate together, one "good" and one "bad," the bad money drives out the good.</blockquote>\n  <p>In plain words: when people have two kinds of currency — one they trust more — they tend to <strong>spend the weaker one</strong> and <strong>keep the stronger one.</strong></p>\n  <p>That\'s why the "bad money" stays in the market, and the "good money" disappears into drawers, safes, and jewelry boxes.</p>\n\n  <h2>The Moroccan version</h2>\n  <p>You don\'t need a PhD to see it in action. Just think about what happens in every Moroccan home.</p>\n  <p>When guests come over, the mother always serves the <em>old candy</em> from the kitchen drawer, while the <em>good chocolates</em> are saved "for a special occasion." 😄</p>\n  <p>That\'s Gresham\'s Law — alive and well in the living room.</p>\n  <p>The same logic applies to money. People use the <em>weaker</em> currency for daily transactions, and they <em>save</em> the stronger one for protection.</p>\n  <p>In the past, that meant spending silver and saving gold. Today, it means spending paper and keeping what truly holds value — gold, silver, or even digital currencies that escape government policy.</p>\n\n  <h2>Paper, screens, and hidden treasures</h2>\n  <p>In modern life, almost everything we use as money is what economists call <strong>fiduciary or scriptural money</strong> — paper notes, coins, and bank transfers whose value exists because we all <em>believe</em> in it.</p>\n  <p>Gold and silver still exist, of course, but they\'ve been pushed out of circulation by the convenience of credit cards, apps, and government-issued money.</p>\n  <p>And according to Gresham, that\'s exactly what should happen. The "bad" or weaker currency — the one that can lose value through inflation or policy — becomes the everyday tool. The "good" one — the stable store of value — gets quietly hidden away.</p>\n  <p>It\'s human nature. We keep what we trust; we spend what we must.</p>\n\n  <h2>Two centuries later</h2>\n  <p>More than two hundred years after Thomas Gresham first described this idea, the law still holds true. Paper money rules our daily lives, while gold sleeps in vaults — untouched, admired, and rarely used.</p>\n  <p>Even the rise of cryptocurrencies hasn\'t changed the pattern; it only gave us a new version of "good money" that people prefer to <strong>store</strong> rather than <strong>spend.</strong></p>\n  <p>So the next time someone tells you economics is outdated, remind them:</p>\n  <p><em>The world may have gone digital, but Gresham\'s Law still runs on time.</em></p>\n  <p>Just like the mother who keeps the fancy sweets hidden for the guests, we all save the "good money" — and spend the rest. 💰✨</p>'}, {'filename': 'information-trust-and-the-hidden-defect.html', 'title': 'Information, Trust, and the Hidden Defect', 'category': 'Information Economics · Nobel Prize Theory', 'img_slug': 'information-trust-and-the-hidden-defect', 'content_html': '<p>It was just a few evenings ago. I was sitting at home, watching one of my favorite Moroccan TV programs — a show where entrepreneurs present their projects to investors. I\'ve always liked these kinds of programs. They make me believe again in the creativity and potential of our country.</p>\n  <p>That night, one investor\'s idea caught my attention more than the others. It wasn\'t complicated or flashy — it was simple, clear, and brilliant.</p>\n  <p>And for a moment, I wondered:</p>\n  <p><em>"Did this person read the Nobel Prize paper from 2001 by Joseph Stiglitz, Michael Spence, and George Akerlof?"</em></p>\n  <p>Because without even realizing it, this entrepreneur had just solved the exact problem those three economists wrote about: <strong>the asymmetry of information.</strong></p>\n\n  <h2>When one side knows more</h2>\n  <p>In economics, <em>information asymmetry</em> happens when two people in a transaction don\'t share the same level of knowledge. Usually, one side knows something the other doesn\'t — and that creates risk.</p>\n  <p>Take the classic example from Akerlof\'s famous paper <em>"The Market for Lemons."</em> It\'s about the <strong>used-car market.</strong></p>\n  <p>Imagine you\'re buying a second-hand car. The seller knows everything about it — every scratch, every noise, every secret repair. You, the buyer, know nothing except what he tells you.</p>\n  <p>That\'s asymmetry.</p>\n  <p>Because of it, many buyers simply avoid the used-car market altogether. They fear being tricked — what economists call <strong>adverse selection.</strong> And when too many buyers leave, the market shrinks, and everyone loses.</p>\n\n  <h2>A modern Moroccan solution</h2>\n  <p>The entrepreneur on the show had found a brilliant way to fix this. He created a service that acts as a <strong>trust bridge</strong> between buyers and sellers of used cars. If you want to buy a car, you tell the company your preferences, and their certified technicians inspect the vehicle in detail. They check every system, every defect, every hidden problem — and then, the company itself becomes the intermediary.</p>\n  <p>You don\'t deal with the seller directly; you deal with the <em>trusted third party.</em> And most importantly, they give you something the individual seller never could: <strong>a guarantee.</strong></p>\n  <p>It was simple but revolutionary — not in technology, but in <strong>trust.</strong></p>\n  <p>This was exactly what Akerlof, Spence, and Stiglitz had been trying to explain for decades: that markets don\'t fail because people are bad — they fail because information isn\'t equal.</p>\n  <p>Once you fix the flow of information, you fix the market.</p>\n\n  <h2>When economics meets creativity</h2>\n  <p>Watching that episode, I realized something I\'ve always believed: sometimes the smartest economic solutions don\'t come from big governments or central banks. They come from small, local minds that understand how people think and trade.</p>\n  <p>By creating transparency, this entrepreneur rebuilt confidence in a market that many people had stopped trusting.</p>\n  <p>Maybe he never read a single academic paper in his life — but he instinctively solved the same problem that earned three professors a Nobel Prize in 2001.</p>\n  <p>And honestly, that night, I didn\'t feel like I had just watched a TV show. I felt like I had just seen a <em>theory come to life.</em></p>\n  <p>So yes, maybe I gave him free publicity in my thoughts — but some ideas deserve it. Because sometimes, economics isn\'t just about numbers — it\'s about <strong>trust, honesty, and the courage to make things clear.</strong> 🚗✨</p>'}, {'filename': 'joseph-schumpeter-and-the-art-of-creative-destruction.html', 'title': 'Joseph Schumpeter and the Art of Creative Destruction', 'category': 'Innovation Economics · History of Thought', 'img_slug': 'joseph-schumpeter-and-the-art-of-creative-destruction', 'content_html': '<p>It was one of those late nights when I couldn\'t sleep, so I started scrolling through old videos on my laptop — clips about the rise and fall of famous brands.</p>\n  <p>There it was: <strong>Nokia</strong>, the company that once ruled our pockets. Then <strong>DVD players</strong>, the kings of every living room. And of course, <strong>Polaroid</strong>, the camera that gave us instant magic long before Instagram existed.</p>\n  <p>Three names that once meant innovation. Three names that eventually disappeared.</p>\n  <p>As I watched, I couldn\'t help but think of <strong>Joseph Schumpeter</strong>, the economist who gave us one of the most beautiful — and brutal — concepts in economic history: <strong>Creative destruction.</strong></p>\n\n  <h2>When innovation becomes a storm</h2>\n  <p>Schumpeter believed that the strength of capitalism doesn\'t come from stability — it comes from its <em>ability to destroy itself and rebuild again.</em></p>\n  <p>He called innovation the true engine of the economy. Not prices, not competition, not even supply and demand — but <strong>the constant wave of new ideas</strong> that replaces the old.</p>\n  <p>Innovation, he said, is like a storm. It arrives suddenly, breaks what existed, and creates something better in its place.</p>\n  <p>That\'s what happened when smartphones appeared. Nokia, which once had nearly half the global phone market, couldn\'t keep up with <strong>Apple</strong> and <strong>Samsung.</strong> They didn\'t lose because their phones were too expensive — they lost because <strong>the game had changed.</strong></p>\n\n  <h2>When markets transform</h2>\n  <p>The same story happened to DVDs when streaming appeared, and to Polaroid cameras when digital photography took over.</p>\n  <p>Each of these industries was once the future — until someone invented a <em>new future.</em></p>\n  <p>That\'s the essence of Schumpeter\'s theory: every new wave of innovation destroys something — and through that destruction, the economy grows stronger.</p>\n  <p>It\'s painful for companies, workers, and investors in the short term, but it\'s also what keeps capitalism alive.</p>\n  <p>Without innovation, there\'s no renewal. Without renewal, everything stops.</p>\n\n  <h2>The human side of the storm</h2>\n  <p>Of course, Schumpeter also knew this "creative destruction" had a price.</p>\n  <p>When new technologies emerge, workers in old industries lose their jobs. Factories close, skills become outdated, and fear spreads.</p>\n  <p>But he also believed this pain was <strong>temporary.</strong> Because those same workers — once unemployed — eventually find new opportunities in the new sectors that innovation creates.</p>\n  <p>The challenge, he said, is not to stop innovation, but to <strong>help people survive its transition.</strong></p>\n  <p>That\'s where the <strong>state</strong> comes in — not to block progress, but to make sure everyone can move with it. To support small companies, encourage research, and protect consumers from prices that grow too fast.</p>\n\n  <h2>Between destruction and hope</h2>\n  <p>As I closed my laptop that night, I thought of all the "Nokias" we\'ve seen — not just companies, but ideas, habits, and even people who couldn\'t adapt fast enough.</p>\n  <p>Maybe that\'s what Schumpeter was trying to tell us: that progress always has a human cost, but it\'s also what keeps the story of humanity moving forward.</p>\n  <p>Innovation destroys, yes — but it also creates new paths, new dreams, new jobs, and new lives.</p>\n  <p>So, if one day you see your favorite brand disappear, don\'t be sad. Maybe it\'s just making space for the next revolution. 💡📱</p>'}, {'filename': 'what-if-gold-were-the-worlds-currency.html', 'title': 'What If Gold Were the World&#8217;s Currency? Would J.B. Say Still Defend His Law?', 'category': 'Classical Economics · Monetary Theory', 'img_slug': 'what-if-gold-were-the-worlds-currency', 'content_html': '<p>It started with a simple question that popped into my head while I was rereading some old economic notes:</p>\n  <p><em>"If gold were still the world\'s money, would Jean-Baptiste Say have dared to write his famous law?"</em></p>\n  <p>It\'s funny how one question can open an entire window into the logic — and limits — of classical economics.</p>\n  <p>We all know Say\'s Law, the elegant line that has survived for more than two centuries:</p>\n  <blockquote>"Every supply creates its own demand."</blockquote>\n  <p>But behind that phrase lies a world of assumptions — and a few fragile hopes about how humans behave with money.</p>\n\n  <h2>A law of perfect balance</h2>\n  <p>Say\'s idea was simple: every act of production generates the income needed to buy what\'s produced. When a company makes goods, it pays wages to workers and profits to owners. Workers spend those wages on consumption; owners invest their profits in new ventures.</p>\n  <p>In this way, the system balances itself. Supply creates its own demand, and crises — at least in theory — should never happen.</p>\n  <p>A perfect circle.</p>\n  <p>But perfection, as always, only exists on paper.</p>\n\n  <h2>When people stop spending</h2>\n  <p>Now imagine that a worker keeps his paycheck instead of spending it, or that a business owner decides to hold on to profits rather than invest. The wheel stops turning. Money stays still.</p>\n  <p>Say was aware of this risk, which is why his law depends on two delicate assumptions.</p>\n\n  <h2>The two fragile assumptions</h2>\n  <p>First, <strong>money must be neutral</strong> — used only as a tool for exchange, not as something to store or speculate with. Second, <strong>savings must equal investment.</strong> In classical thinking, anything saved automatically becomes invested somewhere else — mathematically expressed as:</p>\n  <div class="math-block">S = I</div>\n  <p>If both assumptions hold, the engine runs smoothly. But real life, as usual, has other plans.</p>\n\n  <h2>And what if money were gold?</h2>\n  <p>So let\'s go back to the original question. If the world still used gold as its currency, would Say\'s Law hold?</p>\n  <p>I doubt it.</p>\n  <p>Because gold is never neutral. It\'s not just a unit of account; it\'s a symbol of fear and safety. When uncertainty rises — during wars, crises, or pandemics — people don\'t spend gold, they <strong>hide it.</strong></p>\n  <p>And the moment people hide their money instead of using it, Say\'s perfect circle breaks. Production no longer guarantees demand; the economy stops breathing.</p>\n\n  <h2>The human factor</h2>\n  <p>That\'s the hidden truth behind so many economic theories: they depend on trust, not just logic. They assume that humans will keep spending, investing, and believing in the system.</p>\n  <p>But history — and human nature — say otherwise. When people are afraid, they keep what shines. They lock away their gold, and with it, the rhythm of the economy fades.</p>\n  <p>So yes, if gold were still the world\'s currency, I doubt Jean-Baptiste Say would have announced his famous law. Because gold may glitter, but it doesn\'t circulate — and an economy that doesn\'t circulate, doesn\'t live. ✨</p>'}, {'filename': 'gary-becker-when-a-parking-decision-became-a-nobel-idea.html', 'title': 'Gary Becker: When a Parking Decision Became a Nobel Idea', 'category': 'Behavioral Economics · History of Thought', 'img_slug': 'gary-becker-when-a-parking-decision-became-a-nobel-idea', 'content_html': '<p>It was sometime in the 1960s at Columbia University in New York. A young professor named <strong>Gary Becker</strong> was running late for an oral exam with one of his students. He reached the campus parking lot only to find a long line of cars waiting for tickets.</p>\n  <p>If he stayed in line, he\'d be late. If he parked on the street, he might get fined.</p>\n  <p>So, like any economist, he started doing what economists do best — <strong>calculating.</strong></p>\n  <p>He thought: <em>"If I wait, I\'ll miss the exam and lose time. If I park illegally, I might get a ticket — but maybe I won\'t."</em></p>\n  <p>Then he looked around. Many other cars were parked illegally too. The probability of getting fined was small. So, comparing the <em>cost of being late</em> to the <em>expected cost of a ticket</em>, Becker made his decision.</p>\n  <p>He left the car on the street, smiled, and said to himself: <em>"I just committed a crime."</em></p>\n  <p>But this small moment — half guilt, half curiosity — was the beginning of an idea that would one day change economics forever.</p>\n\n  <h2>A different way to see crime</h2>\n  <p>Later, Becker couldn\'t stop thinking about that incident. He began reading about crime — its causes, its psychology, its moral roots.</p>\n  <p>Most studies at the time said the same thing: <em>"Crime is a social illness. Criminals are irrational or mentally unstable."</em></p>\n  <p>But Becker disagreed. He had just committed a small "crime" himself, and it wasn\'t out of madness — it was a <strong>rational calculation.</strong></p>\n  <p>So he wrote a book that would become a classic: <em><strong>Crime and Punishment: An Economic Approach.</strong></em></p>\n  <p>His argument was revolutionary. He showed that crime isn\'t always emotional or pathological — it can be the result of <strong>economic reasoning.</strong> People weigh the potential benefits of an action against its potential costs, just like any other decision in life.</p>\n  <p>Even breaking the law can be — in a strange way — <em>rational.</em></p>\n\n  <h2>Expanding the economic lens</h2>\n  <p>Thirty-two years later, Becker went even further. He expanded his research to explore how <strong>discrimination, family relationships, and social behavior</strong> influence economic outcomes.</p>\n  <p>He started to see economics not just as numbers and markets, but as a way to understand <strong>human life itself.</strong></p>\n  <p>He called it: <strong>"The Economic Way of Looking at Life."</strong></p>\n  <p>And with that, he won the <strong>Nobel Prize in Economics.</strong></p>\n\n  <h2>The everyday genius</h2>\n  <p>What made Becker\'s work so powerful wasn\'t that it was complicated — it was that it was <em>obvious.</em></p>\n  <p>He showed that ordinary people — all of us — make economic decisions every day, whether we realize it or not. When we decide to skip the bus and walk, when we delay buying something, when we take a small risk — we are all doing a kind of mental cost-benefit analysis.</p>\n  <p>He made economics human again.</p>\n\n  <h2>The simple thought behind a revolution</h2>\n  <p>That day in the 1960s, Becker wasn\'t thinking about Nobel Prizes or new theories. He was just a man in a hurry, deciding between a parking fine and being late.</p>\n  <p>But in that small moment, he discovered something profound:</p>\n  <p>even behind our smallest choices, there\'s a quiet logic — a mix of reason, risk, and hope.</p>\n  <p>Simple ideas, born from daily life. That\'s where the greatest economics often begins. 🚗💭</p>'}, {'filename': 'the-economics-of-semiconductors.html', 'title': 'The Economics of Semiconductors', 'category': 'Global Economy · Technology · Geopolitics', 'img_slug': 'the-economics-of-semiconductors', 'content_html': "<p>These days, the headlines are filled with tension — the kind that feels both political and technological. The United States and its allies — the United Kingdom and Australia — are strengthening their military presence in East Asia. China is responding with its usual mix of calm confidence and quiet warning.</p>\n  <p>At first glance, it looks like another geopolitical rivalry. But behind the speeches, alliances, and military drills, there's something smaller — <em>tiny, in fact</em> — at the center of it all: <strong>the semiconductor.</strong></p>\n\n  <h2>The invisible heart of modern life</h2>\n  <p>During the COVID crisis, something strange happened in the global economy. Car manufacturers — Renault, Toyota, Opel, and many others — were forced to stop production, not because of fuel shortages or labor strikes, but because they ran out of a component no bigger than a fingernail.</p>\n  <p>A single car today needs, on average, <strong>six thousand semiconductor chips</strong> — the small electronic brains that power everything from engine control to GPS. When COVID hit, factories in East Asia — especially in <strong>Taiwan</strong> and <strong>South Korea</strong> — had to shut down repeatedly.</p>\n  <p>Meanwhile, demand shifted. People locked at home began buying laptops, phones, and household electronics. So, production moved toward those products, leaving the car industry without enough chips to keep its lines running.</p>\n  <p>The result was a global supply shock — one that's still not fully recovered.</p>\n\n  <h2>The island that powers the world</h2>\n  <p>Here's where it gets interesting. More than <strong>90%</strong> of the world's advanced semiconductor production happens in one place: <strong>Taiwan.</strong></p>\n  <p>At the center of it all is a single company — the world's technological crown jewel — that produces chips for nearly every major electronics brand. China, despite its enormous industrial power, produces only about <strong>10%</strong> of its own chips.</p>\n  <p>That's a strategic imbalance.</p>\n  <p>Because if <strong>oil</strong> was the key input of the industrial age, then <strong>semiconductors</strong> are the strategic input of the digital age. Whoever controls them, controls the future.</p>\n\n  <h2>When economics meets power</h2>\n  <p>This is why China's interest in Taiwan isn't only about history or politics — it's also about <strong>technology and control.</strong></p>\n  <p>And it's why the U.S., the U.K., and Australia formed a new military alliance called <strong>AUKUS</strong>, focused on defense and deterrence in the Pacific region.</p>\n  <p>It's not just a question of sovereignty anymore — it's about the supply chain that runs the world's electronics, communication systems, cars, and even aircraft. In this game, a shortage of chips isn't just an economic issue. It's a potential <strong>security crisis.</strong></p>\n\n  <h2>Lessons from a microchip</h2>\n  <p>I often think about how fragile globalization really is. A small island in the Pacific produces components so essential that a single disruption there can slow down the entire global economy.</p>\n  <p>During the oil crises of the 1970s, we learned that a few oil producers could shake the world. Today, a few semiconductor producers can do the same — only this time, the threat isn't in the desert, it's in a cleanroom filled with machines that etch microscopic circuits onto silicon.</p>\n\n  <h2>A new era of interdependence</h2>\n  <p>So yes, the geopolitical noise sounds distant, but the truth is, every smartphone in our hands and every car we drive is quietly connected to that tiny chip and that small island.</p>\n  <p>If oil was the blood of the 20th century, then semiconductors are the neurons of the 21st.</p>\n  <p>And just like the brain, a small shock in one area can paralyze the whole system. ⚙️💡</p>"}, {'filename': 'the-trojan-horse-and-multinational-firms.html', 'title': 'The Trojan Horse and Multinational Firms', 'category': 'International Business · Strategy', 'img_slug': 'the-trojan-horse-and-multinational-firms', 'content_html': '<p>Long before globalization, there was strategy. And long before trade agreements or economic unions, there was <strong>the story of Troy.</strong></p>\n  <p>Most of us know it — from history books, from movies, or maybe from a late-night rewatch of <em>Troy</em> with Brad Pitt as Achilles. For ten years, the Greek army failed to enter the city of Troy, protected by a massive wall no weapon could break.</p>\n  <p>Then came a different kind of weapon — <strong>an idea.</strong></p>\n  <p>The Greeks built a magnificent wooden horse, covered in gold and presented as a gift to mark the end of the war. The Trojans, thinking the conflict was finally over, brought the horse inside their city walls.</p>\n  <p>They celebrated. They relaxed. They slept.</p>\n  <p>And that night, as everyone slept, the Greek soldiers hidden inside the horse climbed out, opened the gates from within, and Troy — undefeated for a decade — fell in a single night.</p>\n\n  <h2>A myth reborn in modern economics</h2>\n  <p>Thousands of years later, the story repeats itself — not in war, but in <strong>business.</strong></p>\n  <p>Economists and strategists call it <strong>"The Trojan Horse Strategy."</strong></p>\n  <p>It happens when a company realizes it cannot enter a market directly — maybe because the market is protected by trade barriers, or by regional agreements that favor domestic firms.</p>\n  <p>So instead of attacking from the outside, the company finds another way in: it <strong>buys</strong> a local company from the inside.</p>\n\n  <h2>How the horse rolls in today\'s world</h2>\n  <p>Imagine a large protected market — say, the <strong>European Union</strong>, where only European firms can operate freely without trade restrictions.</p>\n  <p>A foreign company — for instance, from Japan or South Korea — wants to sell its products there but faces import limits and tariffs. So instead of fighting from outside, it quietly <strong>acquires</strong> a struggling European firm — one that\'s on the verge of bankruptcy.</p>\n  <p>The process is called <strong>absorption.</strong></p>\n  <p>The foreign investor buys the local company, keeps its European identity, and starts operating inside the "wall" — but now, under new ownership.</p>\n  <p>And just like that, the gate opens. The market that once seemed closed becomes part of their empire.</p>\n\n  <h2>The Japanese example</h2>\n  <p>In the 1990s, several <strong>Japanese automakers</strong> used this exact approach. Facing tough European regulations and local competition, companies like Toyota and Mitsubishi began investing in or acquiring European car manufacturers that were struggling.</p>\n  <p>It wasn\'t about charity or nostalgia — it was about <strong>strategy.</strong></p>\n  <p>By entering through the "horse," they gained access to one of the most competitive and lucrative markets in the world, without firing a single economic "arrow."</p>\n\n  <h2>Lessons from the myth</h2>\n  <p>When you think about it, the Greek soldiers and the global corporations of today share one thing in common: they both understood that sometimes, the smartest way to win isn\'t through strength — it\'s through <strong>intelligence.</strong></p>\n  <p>The Trojan Horse Strategy is a reminder that in modern economics, wars are rarely fought with weapons. They\'re fought with <strong>ideas, mergers, and acquisitions.</strong></p>\n  <p>And just like in the myth, the walls that seem unbreakable can fall — not with force, but with strategy hidden in plain sight.</p>'}, {'filename': 'the-long-arm-of-the-dollar-extraterritorial-rights.html', 'title': 'The Long Arm of the Dollar: Extraterritorial Rights', 'category': 'International Economics · US Dollar · Geopolitics', 'img_slug': 'the-long-arm-of-the-dollar-extraterritorial-rights', 'content_html': '<p>Whenever people talk about the American economy, someone always says the same thing:</p>\n  <p><em>"But how can the U.S. be so powerful when its trade balance is negative, unemployment rises and inequality grows?"</em></p>\n  <p>It\'s a fair question. On paper, the numbers often look worrying — deficits, debts, social divides. And yet, somehow, the United States remains the most dominant economy on Earth.</p>\n  <p>Some say it\'s because of its military power. Others point to the dollar\'s global role. Some mention oil or influence in the Middle East.</p>\n  <p>All of that is partly true. But there\'s another, less visible factor — one that economists rarely mention in casual conversations: <strong>extraterritorial rights.</strong></p>\n\n  <h2>The laws that travel farther than passports</h2>\n  <p>In simple terms, <em>extraterritoriality</em> means that American laws don\'t stop at America\'s borders. They can be applied — and enforced — anywhere in the world.</p>\n  <p>If that sounds exaggerated, consider this: you don\'t need to live in the U.S. to be punished under U.S. law. You just need to touch <strong>anything American</strong> — a dollar, a bank transaction, a product, a technology, or even a contract.</p>\n  <p>Once the U.S. finds that connection, the rules apply.</p>\n  <p>And these rules bring in <strong>billions of dollars every year</strong> to the American Treasury — sometimes as much as the GDP of small countries.</p>\n\n  <h2>How it works</h2>\n  <p>Let\'s say your company in Europe trades with a country under U.S. sanctions — like Iran or Cuba. Even if your headquarters are in Paris or Madrid, if you used <strong>U.S. dollars</strong> in that transaction, the American government can prosecute you.</p>\n  <p>That\'s because the dollar passes through the U.S. banking system at some point — giving Washington the legal right to claim jurisdiction.</p>\n  <p>It\'s a bit like a spider web: if you touch any part of it, the center feels the vibration.</p>\n\n  <h2>When foreign companies pay the price</h2>\n  <p>This isn\'t theoretical. In <strong>2018</strong>, one of France\'s largest banks was fined <strong>1.4 billion dollars</strong> by the U.S. for violating sanctions — all because its transactions were in dollars.</p>\n  <p>And it wasn\'t the first time. Major European corporations — <strong>BNP Paribas, Alstom, Alcatel, and others</strong> — have all paid heavy penalties for similar reasons.</p>\n  <p>Imagine that: companies fined billions of dollars not by their own governments, but by a country on another continent.</p>\n  <p>That\'s <strong>legal power as an economic tool.</strong></p>\n\n  <h2>Why it matters</h2>\n  <p>Through these extraterritorial laws, the U.S. gains three things at once:</p>\n  <ul>\n    <li><strong>Money</strong> — huge fines flow into its economy.</li>\n    <li><strong>Control</strong> — every major global company must think twice before doing business in dollars.</li>\n    <li><strong>Influence</strong> — by enforcing its own rules abroad, America extends its reach without sending a single soldier.</li>\n  </ul>\n  <p>It\'s the ultimate soft weapon — a form of economic sovereignty that stretches across the entire planet.</p>\n\n  <h2>The unseen empire</h2>\n  <p>So while analysts debate deficits, debt, or unemployment, the U.S. quietly collects billions through legal and monetary dominance.</p>\n  <p>It doesn\'t need to invade or occupy; it simply enforces its laws on the world\'s currency.</p>\n  <p>It\'s not just about who prints the dollar — it\'s about <strong>who owns the rules of using it.</strong></p>\n  <p>And as long as the global economy keeps running on that same dollar, the long arm of American law will always reach farther than any border.</p>'}, {'filename': 'potential-gdp-and-the-hidden-gap-of-human-skills.html', 'title': 'Potential GDP and the Hidden Gap of Human Skills', 'category': 'Labour Economics · Macroeconomics · GDP', 'img_slug': 'potential-gdp-and-the-hidden-gap-of-human-skills', 'content_html': '<p>I\'ve always been fascinated by the idea of <em>what could have been</em> — not just in life, but in economics too. We often measure what a country <em>does</em> produce. But what about what it <em>could</em> have produced?</p>\n  <p>That question is at the heart of one of modern economics\' most subtle concepts: <strong>potential GDP.</strong></p>\n\n  <h2>The idea of what we could achieve</h2>\n  <p>Gross Domestic Product, or GDP, is simple in theory. It measures everything we produce — through recorded output, income, or spending. But back in the 1960s, economist <strong>Arthur Okun</strong> suggested that we should also think about something else:</p>\n  <p><em>the level of production we could reach if we used all our productive capacities.</em></p>\n  <p>He called it <strong>potential GDP</strong> — the invisible ceiling of what an economy can truly achieve when every machine, every worker, and every skill is fully used.</p>\n  <p>The gap between what we actually produce and what we <em>could</em> produce is called the <strong>output gap.</strong> A small gap means we\'re close to our potential. A large one means resources — workers, capital, time — are being left idle.</p>\n\n  <h2>When theory guides policy</h2>\n  <p>Today, central banks and governments rely heavily on this measure. When they detect under-utilized capacity, they lower interest rates or inject liquidity to stimulate investment. When the economy overheats, they do the opposite.</p>\n  <p>The logic seems clean, almost mathematical. Potential GDP is usually estimated through the <strong>Cobb–Douglas production function:</strong></p>\n  <div class="math-block">Y = A × K<sup>1-α</sup> × L<sup>α</sup></div>\n  <p>Where K = capital, L = labor, A = total factor productivity, and α measures labor\'s elasticity in output.</p>\n  <p>It\'s neat, elegant, and terribly incomplete.</p>\n\n  <h2>The missing factor</h2>\n  <p>Because there\'s something this formula forgets to ask: <strong>what kind of labor are we measuring?</strong></p>\n  <p>Economics treats all workers as if they were perfectly matched to their roles — as if a master\'s graduate and a high-school graduate contribute equally when they share the same job.</p>\n  <p>But real life tells another story.</p>\n  <p>Many workers today are not unemployed — they\'re <strong>under-employed.</strong> They work full time, but in jobs far below their level of training or potential. They are counted as <em>employed</em> in the statistics, yet their true contribution — their <em>real capacity</em> — is partially unused.</p>\n  <p>This is what I call <strong>employment with under-exploited skills</strong> (<em>emplois avec sous-exploitation des compétences</em>).</p>\n\n  <h2>The invisible output gap</h2>\n  <p>If the goal of potential GDP is to estimate what we <em>could</em> produce by fully using all our factors of production, shouldn\'t we also consider this <strong>waste of talent</strong> as part of the unused capacity?</p>\n  <p>Because when a highly trained engineer works as a cashier, or a statistician drives for a delivery app, there is an invisible loss of productivity — a hidden <em>output gap</em> that no model measures.</p>\n  <p>What if we could quantify that? How much potential output are we losing simply because we misallocate human skills?</p>\n  <p>Perhaps the true <strong>output gap</strong> is larger than we think — not just in terms of machines sitting idle, but minds underused.</p>\n\n  <h2>Beyond numbers</h2>\n  <p>Arthur Okun\'s idea was about the economy\'s physical limits. Maybe the next generation of economists will extend it to its <strong>human limits</strong> — the skills, creativity, and intelligence we fail to mobilize.</p>\n  <p>Because the potential of a nation isn\'t only in its factories or capital stock — it\'s in the <strong>match between what people can do and what they actually do.</strong></p>\n  <p>And until we learn how to measure that, our GDP will remain incomplete — a picture of productivity that hides half of its color. 💡📊</p>'}, {'filename': 'the-dutch-disease-when-wealth-becomes-a-curse.html', 'title': 'The Dutch Disease: When Wealth Becomes a Curse', 'category': 'Development Economics · Natural Resources', 'img_slug': 'the-dutch-disease-when-wealth-becomes-a-curse', 'content_html': "<p>It all started with a discovery — not of gold, but of gas.</p>\n  <p>In the early 1960s, in the quiet northern city of <strong>Groningen</strong>, the Netherlands struck what seemed like pure luck: vast underground reserves of natural gas. Overnight, the country became one of the world's major energy exporters. The government rejoiced, the newspapers celebrated, and the future looked brighter than ever.</p>\n  <p>But only a few years later, something strange happened. The Dutch economy — instead of booming — began to slow down. Factories closed, unemployment rose, and industrial exports fell. There was no global crisis, no war, no political turmoil.</p>\n  <p>So what happened?</p>\n  <p>Economists called it <strong>the Dutch Disease</strong> — the paradox of a nation becoming weaker after finding new wealth.</p>\n\n  <h2>The hidden mechanism of prosperity</h2>\n  <p>Here's how it works.</p>\n  <p>When a country discovers valuable natural resources — oil, gas, or minerals — the new exports bring in massive foreign currency inflows. That sudden success pushes up the value of the national currency.</p>\n  <p>At first, it sounds great — a stronger currency, a richer country. But as the exchange rate rises, it becomes more expensive to produce and export other goods, like manufactured products or agricultural items.</p>\n  <p>Investors, looking for lower costs, start moving their money elsewhere. Factories shut down, industries shrink, and workers lose their jobs.</p>\n  <p>Soon, the economy becomes dangerously dependent on one sector — the extractive one — which employs very few people.</p>\n  <p>What began as a blessing slowly turns into an illness.</p>\n\n  <h2>From the North Sea to the heart of Africa</h2>\n  <p>The Dutch Disease didn't stop in Europe. It quietly spread, like an invisible pattern, across the world.</p>\n  <p>Look at Africa today: countries rich in oil, gas, and minerals often remain among the poorest on Earth.</p>\n  <p>Take <strong>coltan</strong>, for example — a rare mineral used in almost every smartphone and laptop. Nearly 70% of the world's supply comes from African soil, especially the <strong>Democratic Republic of Congo.</strong></p>\n  <p>Or look at <strong>Nigeria, Angola, Algeria, Libya, and Egypt</strong> — nations with vast oil and gas reserves. Yet many of them still struggle with poverty, unemployment, and political instability.</p>\n  <p>The paradox persists: the richer the ground, the poorer the people.</p>\n\n  <h2>The economic trap</h2>\n  <p>When resource wealth floods a country, it often reshapes its economy around extraction. The currency appreciates, manufacturing becomes uncompetitive, and imports replace domestic production.</p>\n  <p>Governments start using their resource revenues to buy foreign goods and subsidize consumption — but that creates a fragile balance, vulnerable to any drop in global prices.</p>\n  <p>Once the price of oil or gas falls, the entire economy trembles. And when jobs disappear, anger rises.</p>\n  <p>Some countries, like <strong>Qatar and the United Arab Emirates</strong>, saw the trap coming and diversified early — investing in tourism, finance, and technology.</p>\n  <p>Others, like <strong>Venezuela</strong>, fell deep into the cycle: nationalization, over-reliance, inflation, and collapse.</p>\n\n  <h2>The deeper lesson</h2>\n  <p>The Dutch Disease isn't really about resources. It's about dependence — on one thing, one price, one dream.</p>\n  <p>An economy that forgets to diversify its skills, industries, and ideas will always be fragile, no matter how much treasure lies beneath its soil.</p>\n  <p>In the end, true wealth isn't what you find underground — it's what you build above it. 🌍💡</p>"}, {'filename': 'the-psychology-of-sunk-costs.html', 'title': 'The Psychology of Sunk Costs: Why We Keep Losing', 'category': 'Behavioral Economics · Decision Theory', 'img_slug': 'the-psychology-of-sunk-costs', 'content_html': '<p>We\'ve all been there: a long, tiring argument or a project that eats hours and money. At some point you realize you were wrong. But instead of saying so, you keep going — deeper and deeper — defending the choice that\'s already failed.</p>\n  <p>Call it stubbornness, pride, or shame. Call it whatever you like. From an economist\'s point of view, it\'s an everyday human mistake with a name: <strong>the sunk-cost fallacy.</strong></p>\n\n  <h2>When cost becomes a weight</h2>\n  <p>Sunk costs are the things you already spent and cannot recover — time, money, effort, pride. The rational rule is simple: future decisions should be made by comparing <strong>future</strong> costs and benefits. Anything already spent is irrelevant.</p>\n  <p>But humans are not purely rational machines. We feel loss. We hate admitting waste. That feeling twists decisions. Instead of cutting losses, we double down — and sometimes keep pouring until there\'s nothing left but regret.</p>\n  <p>Businesses do it. Startups do it. Governments do it. People do it.</p>\n\n  <h2>A classic experiment: the ticket to a ruined trip</h2>\n  <p>Three decades of behavioral studies show how common this is. Arkes and Blumer ran a neat one that\'s easy to remember (and painful to watch yourself in).</p>\n  <p>Imagine you bought a $100 ticket for a trip to a mountain town. At the last minute the weather turns terrible — freezing rain, closed trails. You now have two options:</p>\n  <ul>\n    <li>Spend the $100 and go anyway (miserable), or</li>\n    <li>Accept the $100 loss and go on a nearby holiday with friends for $50 (fun).</li>\n  </ul>\n  <p>Rationally, the right decision is obvious: the $100 is gone — choose the option that gives more future enjoyment (the $50 trip with friends). But the experiments found many people prefer to go to the ruined destination — just to "make the ticket count."</p>\n  <p>In one version, 33 people chose to go to the ruined town while only 28 chose the better alternative. In other experiments the gap was far larger — sometimes 80% choose the sunk-cost path.</p>\n\n  <h2>Companies and the slow bleed</h2>\n  <p>The same psychology explains corporate disasters: firms continue funding a failing project because they\'ve already invested heavily. Boards will approve "just one more round" of funding. Managers will keep hiring. The small loss to admit failure seems bigger than the future, rational savings.</p>\n  <p>We call it <em>escalation of commitment.</em> The result is the same in households and in corporations: resources wasted, talent misused, opportunities lost.</p>\n\n  <h2>How to avoid the trap</h2>\n  <p>Good news: awareness helps. Here are simple ways to fight sunk-cost thinking — small habits that actually work:</p>\n  <ul>\n    <li><strong>Ask only future questions.</strong> When deciding, ask: <em>"Given what I know now, what will be better from now on?"</em> Ignore past losses.</li>\n    <li><strong>Set pre-planned exit rules.</strong> Before starting a project, decide the objective and the cutoff (time, cost, metrics). If the rule is broken, stop.</li>\n    <li><strong>Use an external reviewer.</strong> A fresh pair of eyes (colleague, friend, advisor) is less likely to be emotionally attached and can recommend stopping.</li>\n    <li><strong>Frame losses honestly.</strong> Name the sunk cost out loud: "We spent X and cannot get it back." Saying it reduces the psychological pull.</li>\n    <li><strong>Measure opportunity cost.</strong> Ask: <em>"What else could we do with the time/money?"</em> Comparing to alternatives makes continuing look less attractive.</li>\n  </ul>\n\n  <h2>A small, honest ending</h2>\n  <p>We don\'t behave like pure calculators — and that\'s okay. The sunk-cost fallacy is a human thing: we value consistency, we fear shame, we hate waste. But those feelings can be guided.</p>\n  <p>Next time you feel the urge to keep going just because you already spent something — pause. Take the outside view. Ask the one question that matters: <strong>What decision will give me the best future, not the best past?</strong></p>\n  <p>Economics doesn\'t just teach numbers. Sometimes it teaches the courage to stop.</p>'}]
-
-BLOG_TEMPLATE = r"""<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>__TITLE__ — Aissam Boudrouz</title>
+  <title>Aissam Boudrouz | Economist & Data Analyst</title>
+  <meta name="description" content="Professional portfolio of Aissam Boudrouz: economics, data analytics, applied econometrics, policy analysis, dashboards, blogs and research." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css" />
-  <style>
-    body {
-      background: #f8f5ee;
-    }
-    .blog-page {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 120px 24px 70px;
-    }
-    .blog-hero {
-      background: #ffffff;
-      border-radius: 28px;
-      overflow: hidden;
-      box-shadow: 0 20px 55px rgba(15, 32, 50, 0.12);
-      margin-bottom: 34px;
-    }
-    .blog-hero-img {
-      width: 100%;
-      height: 390px;
-      object-fit: cover;
-      display: block;
-      background: #14293d;
-    }
-    .blog-header {
-      padding: 36px;
-    }
-    .blog-header .category {
-      display: inline-block;
-      margin-bottom: 14px;
-    }
-    .blog-header h1 {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(2.1rem, 5vw, 4rem);
-      line-height: 1.05;
-      margin-bottom: 16px;
-      color: #14293d;
-    }
-    .blog-meta {
-      color: #6b7280;
-      font-weight: 600;
-    }
-    .blog-content {
-      background: #ffffff;
-      border-radius: 28px;
-      padding: 42px;
-      box-shadow: 0 16px 45px rgba(15, 32, 50, 0.08);
-    }
-    .blog-content p {
-      font-size: 1.08rem;
-      line-height: 1.9;
-      color: #243447;
-      margin-bottom: 22px;
-    }
-    .blog-content h2 {
-      font-size: 1.55rem;
-      margin: 38px 0 16px;
-      color: #14293d;
-    }
-    .blog-content blockquote {
-      border-left: 4px solid #c6a269;
-      padding: 14px 22px;
-      margin: 24px 0;
-      background: #f8f5ee;
-      color: #243447;
-      font-style: italic;
-      border-radius: 12px;
-    }
-    .blog-content ul {
-      margin: 18px 0 24px 24px;
-      color: #243447;
-      line-height: 1.8;
-    }
-    .math-block {
-      background: #f8f5ee;
-      border: 1px solid #e8dcc3;
-      border-radius: 14px;
-      padding: 18px;
-      margin: 18px 0 24px;
-      text-align: center;
-      font-weight: 700;
-      color: #14293d;
-      font-size: 1.15rem;
-    }
-    .back-link {
-      display: inline-block;
-      margin-top: 28px;
-      font-weight: 700;
-      color: #14293d;
-      text-decoration: none;
-    }
-    @media (max-width: 700px) {
-      .blog-page {
-        padding-top: 95px;
-      }
-      .blog-hero-img {
-        height: 250px;
-      }
-      .blog-header, .blog-content {
-        padding: 26px;
-      }
-    }
-  </style>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="site-header">
-    <a class="brand" href="../index.html#home"><span>AB</span>Aissam Boudrouz</a>
+    <a class="brand" href="#home"><span>AB</span>Aissam Boudrouz</a>
+
     <button class="menu-toggle" aria-label="Open menu">☰</button>
+
     <nav class="nav">
-      <a href="../index.html#about">About</a>
-      <a href="../index.html#projects">Projects</a>
-      <a href="../index.html#articles">Articles</a>
-      <a href="../index.html#experience">Experience</a>
-      <a href="../index.html#research">Research</a>
-      <a class="nav-cta" href="../index.html#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#articles">Articles</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a class="nav-cta" href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main class="blog-page">
-    <article>
-      <div class="blog-hero">
-        <img src="../images/blogs/__IMG_SLUG__.jpg" alt="__TITLE__" class="blog-hero-img" onerror="this.style.display='none'">
-        <div class="blog-header">
-          <span class="category">__CATEGORY__</span>
-          <h1>__TITLE__</h1>
-          <p class="blog-meta">By Aissam Boudrouz · Book Chapter</p>
+  <main>
+
+    <section id="home" class="hero section-pad">
+      <div class="hero-content">
+        <p class="eyebrow">Economics · Data Analytics · Project Coordination</p>
+
+        <h1>Aissam Boudrouz</h1>
+
+        <h2>Economist | Data Analyst | Project Coordinator</h2>
+
+        <p class="lead">
+          I transform economic, policy, and business data into clear insights,
+          econometric models, dashboards, and decision-support tools.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#articles">Read Articles</a>
+          <a class="btn ghost" href="cv/Aissam_Boudrouz_CV.pdf" target="_blank">Download CV</a>
+        </div>
+
+        <div class="hero-tags">
+          <span>Python</span>
+          <span>Streamlit</span>
+          <span>Panel Models</span>
+          <span>Time Series</span>
+          <span>Cross-Sectional Regressions</span>
+          <span>GARCH</span>
+          <span>ARMA / ARDL / ECM / VAR</span>
+          <span>Oaxaca-Blinder Decomposition</span>
         </div>
       </div>
 
-      <div class="blog-content">
-        __CONTENT_HTML__
-        <a class="back-link" href="../index.html#articles">← Back to Articles</a>
+      <div class="hero-visual">
+        <div class="portrait-card">
+          <img src="images/profile.jpg" alt="Professional portrait of Aissam Boudrouz" />
+          <div class="floating-card top">
+            <strong>Applied Econometrics</strong>
+            <span>Panel · Time Series · Forecasting</span>
+          </div>
+          <div class="floating-card bottom">
+            <strong>7+ dashboards</strong>
+            <span>Economics · PMO · BI</span>
+          </div>
+        </div>
       </div>
-    </article>
+    </section>
+
+    <section id="about" class="about section-pad soft-bg">
+      <div class="section-title">
+        <p class="eyebrow">About me</p>
+        <h2>Turning complex data into decision-ready insights.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="images/about.jpg" alt="Aissam Boudrouz in a professional setting" />
+        </div>
+
+        <div class="about-text">
+          <p>
+            I am an economist and data analyst based in the Gatineau-Ottawa region,
+            with experience in macroeconomic analysis, applied econometrics,
+            policy-oriented research, and data visualization.
+          </p>
+
+          <p>
+            My work focuses on transforming complex datasets into clear insights
+            through econometric models, dashboards, indicators, and analytical reports.
+            I have experience in public-sector data analysis, institutional monitoring,
+            empirical research, and project coordination.
+          </p>
+
+          <div class="stats">
+            <div><strong>7+</strong><span>Streamlit projects</span></div>
+            <div><strong>21</strong><span>Book-style articles</span></div>
+            <div><strong>Public sector</strong><span>Data & reporting</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-pad">
+      <div class="section-title centered">
+        <p class="eyebrow">Portfolio</p>
+        <h2>Featured Projects</h2>
+        <p>
+          Interactive dashboards combining economics, data analytics, public policy,
+          business intelligence, and project management.
+        </p>
+      </div>
+
+      <div class="cards-grid projects-grid">
+
+        <article class="project-card">
+          <img src="images/projects/renewable-energy-africa.jpg" alt="Renewable Energy Risk Matrix in Africa">
+          <div class="card-body">
+            <span class="category">Energy Policy | Risk Analysis | Africa</span>
+            <h3>Renewable Energy Risk Matrix in Africa</h3>
+            <p>Interactive dashboard assessing renewable energy investment risk across African countries using governance, infrastructure, energy access, fossil fuel subsidies, logistics and vulnerability indicators.</p>
+            <div class="tools">Python · Streamlit · Risk scoring</div>
+            <a href="https://renewable-energy-risk-africa-9tppljhh9p43bhvyzusyju.streamlit.app/" target="_blank">Open Dashboard →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/projects/policy-mix-inflation.jpg" alt="Policy Mix and Inflation in Morocco">
+          <div class="card-body">
+            <span class="category">Macroeconomics | Inflation | Policy Analysis</span>
+            <h3>Policy Mix & Inflation in Morocco</h3>
+            <p>Macroeconomic dashboard analyzing inflation dynamics and policy mix interactions in Morocco through visual indicators and empirical interpretation.</p>
+            <div class="tools">Python · Streamlit · Time series</div>
+            <a href="https://policy-mix-inflation-morocco-nsnsumqzryvgtp4werrzo7.streamlit.app/" target="_blank">Open Dashboard →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/projects/fdi-institutions-morocco.jpg" alt="FDI and Institutions in Morocco">
+          <div class="card-body">
+            <span class="category">FDI | Institutions | Applied Econometrics</span>
+            <h3>FDI and Institutions in Morocco</h3>
+            <p>Dynamic dashboard examining the relationship between FDI, institutional quality and macroeconomic variables using ARDL/ECM modeling, diagnostics and policy interpretation.</p>
+            <div class="tools">Python · Streamlit · ARDL · ECM</div>
+            <a href="https://morocco-fdi-institutions-ardl-diklpeyahkyqw9vqcy2srm.streamlit.app/" target="_blank">Open Dashboard →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/projects/customer-behavior.jpg" alt="Customer Behavior Marketing Analytics">
+          <div class="card-body">
+            <span class="category">Marketing Analytics | Customer Insights</span>
+            <h3>Customer Behavior Marketing Analytics</h3>
+            <p>Customer analytics dashboard exploring consumer behavior, marketing patterns and segmentation insights to support business decision-making.</p>
+            <div class="tools">Python · Streamlit · Segmentation</div>
+            <a href="https://customer-behavior-marketing-analytics-idikmhmwqjjtzgkhwslb7x.streamlit.app/" target="_blank">Open Dashboard →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/projects/ecommerce-sales.jpg" alt="E-commerce Sales and Customer Segmentation">
+          <div class="card-body">
+            <span class="category">E-commerce | Sales Analytics | Segmentation</span>
+            <h3>E-commerce Sales & Customer Segmentation</h3>
+            <p>E-commerce analytics project focused on sales trends, customer segmentation, purchasing behavior and business performance indicators.</p>
+            <div class="tools">Python · Streamlit · Customer analytics</div>
+            <a href="https://ecommerce-sales-customer-segmentation-guxigb42fdbkur7nxazno6.streamlit.app/" target="_blank">Open Dashboard →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/projects/professional-profile.jpg" alt="Professional Profile Modeling">
+          <div class="card-body">
+            <span class="category">Career Analytics | Personal Data Modeling</span>
+            <h3>Professional Profile Modeling</h3>
+            <p>Creative professional profile dashboard modeling career experience, skills, projects and analytical strengths through a data-driven portfolio format.</p>
+            <div class="tools">Python · Streamlit · Data storytelling</div>
+            <a href="https://professional-profile-app-mm4dyuir7tnx92viugnjqp.streamlit.app/" target="_blank">Open Dashboard →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/projects/pmo-dashboard.jpg" alt="PMO Project Portfolio Dashboard">
+          <div class="card-body">
+            <span class="category">Project Management | PMO | Portfolio Analytics</span>
+            <h3>PMO Project Portfolio Dashboard</h3>
+            <p>Project portfolio dashboard designed to analyze performance, budget tracking, timelines, risks, priorities and portfolio-level KPIs.</p>
+            <div class="tools">Python · Streamlit · Project KPIs</div>
+            <a href="https://pmo-project-portfolio-dashboard-3uxed3nugsugz5yvdsnupx.streamlit.app/" target="_blank">Open Dashboard →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="articles" class="section-pad soft-bg">
+      <div class="section-title centered">
+        <p class="eyebrow">Book Chapters & Articles</p>
+        <h2>Economics in everyday life, crisis, money, oil, technology, and policy</h2>
+        <p>Original book-style chapters by Aissam Boudrouz, followed by selected ResearchGate articles.</p>
+      </div>
+
+      <div class="cards-grid articles-grid">
+
+        <article class="project-card article-card">
+          <img src="images/blogs/when-summer-lost-its-season.jpg" alt="When Summer Lost Its Season">
+          <div class="card-body">
+            <span class="category">Remote Work · Tourism Economics</span>
+            <h3>When Summer Lost Its Season: Remote Work and the End of Tourism’s Clock</h3>
+            <p>Remote work, time flexibility, and the possible end of traditional tourism seasonality.</p>
+            <a href="blogs/when-summer-lost-its-season.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/the-economic-profit-of-a-loaf-of-bread.jpg" alt="The Economic Profit of a Loaf of Bread">
+          <div class="card-body">
+            <span class="category">Behavioral Economics · Decision Theory</span>
+            <h3>The Economic Profit of a Loaf of Bread</h3>
+            <p>A simple bread decision becomes a lesson in risk aversion, peace of mind, and invisible profit.</p>
+            <a href="blogs/the-economic-profit-of-a-loaf-of-bread.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/a-stroll-with-inflation.jpg" alt="A Stroll with Inflation">
+          <div class="card-body">
+            <span class="category">Macroeconomics · Inflation · Purchasing Power</span>
+            <h3>A Stroll with Inflation</h3>
+            <p>A taxi conversation becomes a reflection on prices, wages, and purchasing power.</p>
+            <a href="blogs/a-stroll-with-inflation.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/the-patience-game.jpg" alt="The Patience Game">
+          <div class="card-body">
+            <span class="category">Behavioral Economics · Temporal Discounting</span>
+            <h3>The Patience Game</h3>
+            <p>A café conversation about money today or more money later opens the door to present bias.</p>
+            <a href="blogs/the-patience-game.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/the-cafe-owner-and-keynes.jpg" alt="The Café Owner and Keynes">
+          <div class="card-body">
+            <span class="category">Keynesian Economics · Anticipated Demand</span>
+            <h3>The Café Owner and Keynes</h3>
+            <p>A Moroccan café owner prepares extra chairs before football crowds arrive: Keynes in real life.</p>
+            <a href="blogs/the-cafe-owner-and-keynes.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/the-bread-the-ports-and-the-price-of-patience.jpg" alt="The Bread, the Ports, and the Price of Patience">
+          <div class="card-body">
+            <span class="category">Supply-Side Inflation · Global Trade</span>
+            <h3>The Bread, the Ports, and the Price of Patience</h3>
+            <p>A Moroccan-style explanation of supply inflation, ports, COVID disruption, and global trade.</p>
+            <a href="blogs/the-bread-the-ports-and-the-price-of-patience.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/the-day-oil-was-worth-less-than-nothing.jpg" alt="The Day Oil Was Worth Less Than Nothing">
+          <div class="card-body">
+            <span class="category">Oil Markets · Financial Economics</span>
+            <h3>The Day Oil Was Worth Less Than Nothing</h3>
+            <p>April 2020, negative oil prices, futures contracts, storage limits, and market panic.</p>
+            <a href="blogs/the-day-oil-was-worth-less-than-nothing.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/black-gold-between-uncertainty-supply-and-the-opec-games.jpg" alt="Black Gold Between Uncertainty Supply and OPEC Games">
+          <div class="card-body">
+            <span class="category">Oil Markets · OPEC · Geopolitics</span>
+            <h3>Black Gold Between Uncertainty, Supply, and the OPEC Games</h3>
+            <p>Oil prices, OPEC decisions, geopolitical strategy, and the world’s dependence on black gold.</p>
+            <a href="blogs/black-gold-between-uncertainty-supply-and-the-opec-games.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/crisis-or-risk-the-world-between-hope-and-the-omicron-shadow.jpg" alt="Crisis or Risk">
+          <div class="card-body">
+            <span class="category">Risk & Uncertainty · Global Economy</span>
+            <h3>Crisis or Risk: The World Between Hope and the Omicron Shadow</h3>
+            <p>Omicron, uncertainty, markets, confidence, and the difference between measurable risk and crisis.</p>
+            <a href="blogs/crisis-or-risk-the-world-between-hope-and-the-omicron-shadow.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/from-health-crisis-to-stagflation.jpg" alt="From Health Crisis to Stagflation">
+          <div class="card-body">
+            <span class="category">Macroeconomics · Stagflation · Economic Policy</span>
+            <h3>From Health Crisis to Stagflation?</h3>
+            <p>A reflection on inflation, weak growth, supply shocks, and the fear of stagflation after COVID.</p>
+            <a href="blogs/from-health-crisis-to-stagflation.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/greshams-law-two-hundred-years-later.jpg" alt="Gresham’s Law">
+          <div class="card-body">
+            <span class="category">Monetary Economics · Currency Theory</span>
+            <h3>Gresham’s Law: Two Hundred Years Later</h3>
+            <p>Why weaker money circulates while stronger stores of value disappear into drawers and vaults.</p>
+            <a href="blogs/greshams-law-two-hundred-years-later.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/information-trust-and-the-hidden-defect.jpg" alt="Information Trust and the Hidden Defect">
+          <div class="card-body">
+            <span class="category">Information Economics · Nobel Prize Theory</span>
+            <h3>Information, Trust, and the Hidden Defect</h3>
+            <p>A Moroccan business idea becomes a lesson in information asymmetry, used cars, and trust.</p>
+            <a href="blogs/information-trust-and-the-hidden-defect.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/joseph-schumpeter-and-the-art-of-creative-destruction.jpg" alt="Joseph Schumpeter">
+          <div class="card-body">
+            <span class="category">Innovation Economics · History of Thought</span>
+            <h3>Joseph Schumpeter and the Art of Creative Destruction</h3>
+            <p>Nokia, DVDs, Polaroid, innovation, and the beautiful brutality of creative destruction.</p>
+            <a href="blogs/joseph-schumpeter-and-the-art-of-creative-destruction.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/what-if-gold-were-the-worlds-currency.jpg" alt="Gold and Say's Law">
+          <div class="card-body">
+            <span class="category">Classical Economics · Monetary Theory</span>
+            <h3>What If Gold Were the World’s Currency?</h3>
+            <p>Say’s Law, neutral money, savings, investment, trust, and the question of gold as currency.</p>
+            <a href="blogs/what-if-gold-were-the-worlds-currency.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/gary-becker-when-a-parking-decision-became-a-nobel-idea.jpg" alt="Gary Becker">
+          <div class="card-body">
+            <span class="category">Behavioral Economics · History of Thought</span>
+            <h3>Gary Becker: When a Parking Decision Became a Nobel Idea</h3>
+            <p>A parking decision becomes a lesson in rational choice, crime, punishment, and everyday economics.</p>
+            <a href="blogs/gary-becker-when-a-parking-decision-became-a-nobel-idea.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/the-economics-of-semiconductors.jpg" alt="The Economics of Semiconductors">
+          <div class="card-body">
+            <span class="category">Global Economy · Technology · Geopolitics</span>
+            <h3>The Economics of Semiconductors</h3>
+            <p>Chips, Taiwan, supply chains, geopolitics, and the neurons of the 21st-century economy.</p>
+            <a href="blogs/the-economics-of-semiconductors.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/the-trojan-horse-and-multinational-firms.jpg" alt="The Trojan Horse and Multinational Firms">
+          <div class="card-body">
+            <span class="category">International Business · Strategy</span>
+            <h3>The Trojan Horse and Multinational Firms</h3>
+            <p>How companies enter protected markets through acquisitions, strategy, and economic intelligence.</p>
+            <a href="blogs/the-trojan-horse-and-multinational-firms.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/the-long-arm-of-the-dollar-extraterritorial-rights.jpg" alt="The Long Arm of the Dollar">
+          <div class="card-body">
+            <span class="category">International Economics · US Dollar · Geopolitics</span>
+            <h3>The Long Arm of the Dollar: Extraterritorial Rights</h3>
+            <p>The global reach of U.S. law, the dollar, sanctions, fines, and economic sovereignty.</p>
+            <a href="blogs/the-long-arm-of-the-dollar-extraterritorial-rights.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/potential-gdp-and-the-hidden-gap-of-human-skills.jpg" alt="Potential GDP and Human Skills">
+          <div class="card-body">
+            <span class="category">Labour Economics · Macroeconomics · GDP</span>
+            <h3>Potential GDP and the Hidden Gap of Human Skills</h3>
+            <p>Potential GDP, output gaps, underused human skills, and the hidden productivity loss in modern economies.</p>
+            <a href="blogs/potential-gdp-and-the-hidden-gap-of-human-skills.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/the-dutch-disease-when-wealth-becomes-a-curse.jpg" alt="The Dutch Disease">
+          <div class="card-body">
+            <span class="category">Development Economics · Natural Resources</span>
+            <h3>The Dutch Disease: When Wealth Becomes a Curse</h3>
+            <p>Natural resources, currency appreciation, deindustrialization, dependence, and fragile wealth.</p>
+            <a href="blogs/the-dutch-disease-when-wealth-becomes-a-curse.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/the-psychology-of-sunk-costs.jpg" alt="The Psychology of Sunk Costs">
+          <div class="card-body">
+            <span class="category">Behavioral Economics · Decision Theory</span>
+            <h3>The Psychology of Sunk Costs: Why We Keep Losing</h3>
+            <p>Why people, firms, and governments keep investing in bad decisions because of what they already lost.</p>
+            <a href="blogs/the-psychology-of-sunk-costs.html">Read Chapter →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/multicollinearity.jpg" alt="Multicollinearity article">
+          <div class="card-body">
+            <span class="category">ResearchGate · Econometrics · French</span>
+            <h3>Collinearity and Multicollinearity: Explanation with a Real-Life Example</h3>
+            <p>An educational article explaining collinearity and multicollinearity in regression models through a real-life example observed in Safi, Morocco.</p>
+            <a href="https://www.researchgate.net/publication/389948276_Colinearite_et_Multicolinearite_Explication_et_Illustration_par_un_Exemple_Reel_avec_Demonstration_Mathematique" target="_blank">Read Article →</a>
+          </div>
+        </article>
+
+        <article class="project-card article-card">
+          <img src="images/blogs/canada-protectionism.jpg" alt="Canada protectionism article">
+          <div class="card-body">
+            <span class="category">ResearchGate · International Trade · Public Policy</span>
+            <h3>Canada Facing American Protectionism</h3>
+            <p>An analytical article discussing Canada’s exposure to U.S. protectionist policies, trade dependency and possible economic policy responses.</p>
+            <a href="https://www.researchgate.net/publication/389749869_Le_Canada_face_au_protectionnisme_americain" target="_blank">Read Article →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="experience" class="section-pad">
+      <div class="section-title">
+        <p class="eyebrow">Career path</p>
+        <h2>Professional Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span>May 2021 - Oct 2024</span>
+          <h3>Economist & Statistics Officer</h3>
+          <p class="place">Ministry of Justice · Morocco</p>
+          <p>Designed performance indicators, analytical dashboards and reporting tools to support institutional monitoring and decision-making. Analyzed administrative datasets related to flows, productivity, efficiency and operational trends.</p>
+        </div>
+
+        <div class="timeline-item">
+          <span>2020 - 2024</span>
+          <h3>Freelance Economic Consultant</h3>
+          <p class="place">Independent projects · Morocco, France, Spain</p>
+          <p>Conducted quantitative economic studies using time-series, panel and cross-sectional datasets. Designed econometric models, empirical strategies and policy-oriented interpretation.</p>
+        </div>
+
+        <div class="timeline-item">
+          <span>Nov 2024 - Present</span>
+          <h3>Supply Teacher</h3>
+          <p class="place">CSSPO · Gatineau, Canada</p>
+          <p>Delivered structured learning activities and strengthened communication, presentation and adaptation skills in a public-sector educational environment.</p>
+        </div>
+
+        <div class="timeline-item">
+          <span>Mar - Jun 2020</span>
+          <h3>Economic Research Intern</h3>
+          <p class="place">Ministry of Economy and Finance · Rabat, Morocco</p>
+          <p>Conducted economic analysis on African economic integration and developed econometric simulations and composite indicators to support policy and market assessment.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section-pad soft-bg" id="skills">
+      <div class="section-title centered">
+        <p class="eyebrow">Skills</p>
+        <h2>Core expertise</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div>
+          <h3>Data Analytics & BI</h3>
+          <p>Python, pandas, Streamlit, Plotly, Power BI, Excel, SQL</p>
+        </div>
+
+        <div>
+          <h3>Econometrics & Modeling</h3>
+          <p>Panel models, time series, cross-sectional regressions, GARCH, ARMA, ARDL, ECM, VAR, Oaxaca-Blinder decomposition, forecasting, diagnostic tests</p>
+        </div>
+
+        <div>
+          <h3>Policy & Economic Analysis</h3>
+          <p>Macroeconomics, inflation, FDI, institutions, financial stability, public policy</p>
+        </div>
+
+        <div>
+          <h3>Project Coordination</h3>
+          <p>KPIs, reporting, stakeholder communication, documentation, process improvement</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="research section-pad">
+      <div class="research-grid">
+        <div>
+          <p class="eyebrow">Research & Conferences</p>
+          <h2>Academic and policy-oriented contributions</h2>
+
+          <ul class="research-list">
+            <li>
+              <strong>University of Ottawa Conference Presentation, 2026</strong>
+              <span>Institutional performance and attractiveness of foreign direct investment in Morocco.</span>
+            </li>
+
+            <li>
+              <strong>IJRISS, 2023</strong>
+              <span>An Ex-Ante Approach to the Profitability of a Customs Union.</span>
+            </li>
+
+            <li>
+              <strong>ResearchGate publication</strong>
+              <span>Structural and Behavioural Drivers of Sheep Prices in Morocco: An Oaxaca-Blinder Approach.</span>
+            </li>
+
+            <li>
+              <strong>ICRSAE 2023</strong>
+              <span>International conference presentation.</span>
+            </li>
+          </ul>
+        </div>
+
+        <img src="images/conference.jpg" alt="Conference presentation at the University of Ottawa" />
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-pad">
+      <div class="contact-card">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect</h2>
+
+        <p>
+          Interested in economics, data analytics, dashboards, policy research,
+          or project coordination? You can reach me here.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:boudrouzaissam@gmail.com">boudrouzaissam@gmail.com</a>
+          <a href="https://github.com/boudrouzaissam" target="_blank">GitHub</a>
+          <a href="https://www.researchgate.net/profile/Aissam-Boudrouz" target="_blank">ResearchGate</a>
+          <span>Gatineau / Ottawa, Canada</span>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>© 2026 Aissam Boudrouz. All rights reserved.</footer>
-  <script src="../script.js"></script>
+  <footer>
+    © 2026 Aissam Boudrouz. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-"""
-
-def create_pages():
-    blogs_dir = Path("blogs")
-    blogs_dir.mkdir(exist_ok=True)
-
-    for article in ARTICLES:
-        page = (BLOG_TEMPLATE
-            .replace("__TITLE__", article["title"])
-            .replace("__CATEGORY__", article["category"])
-            .replace("__IMG_SLUG__", article["img_slug"])
-            .replace("__CONTENT_HTML__", article["content_html"])
-        )
-        path = blogs_dir / article["filename"]
-        path.write_text(page, encoding="utf-8")
-        print(f"Created/updated: {path}")
-
-    print(f"Done: {len(ARTICLES)} blog pages created in blogs/")
-
-if __name__ == "__main__":
-    create_pages()
