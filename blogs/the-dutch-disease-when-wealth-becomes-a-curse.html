@@ -3,29 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Dutch Disease: When Wealth Becomes a Curse | Aissam Boudrouz</title>
-  <meta name="description" content="It all started with a discovery — not of gold, but of gas. In the early 1960s, in the quiet northern city of Groningen, the Netherlands struck what seemed like pure luck: vast underground re..." />
+  <title>The Dutch Disease: When Wealth Becomes a Curse — Aissam Boudrouz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
   <style>
-    body { background: #f8f5ee; }
-    .blog-page { max-width: 980px; margin: 0 auto; padding: 120px 24px 70px; }
-    .blog-hero { background: #fff; border-radius: 28px; overflow: hidden; box-shadow: 0 20px 55px rgba(15,32,50,.12); margin-bottom: 34px; }
-    .blog-hero img { width: 100%; height: 390px; object-fit: cover; display: block; }
-    .blog-header { padding: 36px; }
-    .blog-header .category { display: inline-block; margin-bottom: 14px; }
-    .blog-header h1 { font-family: "Playfair Display", serif; font-size: clamp(2.1rem, 5vw, 4rem); line-height: 1.05; margin-bottom: 16px; color: #14293d; }
-    .blog-meta { color: #6b7280; font-weight: 600; }
-    .blog-content { background: #fff; border-radius: 28px; padding: 42px; box-shadow: 0 16px 45px rgba(15,32,50,.08); }
-    .blog-content p { font-size: 1.08rem; line-height: 1.9; color: #243447; margin-bottom: 22px; }
-    .blog-content h2 { font-size: 1.55rem; margin: 38px 0 16px; color: #14293d; }
-    .back-link { display: inline-block; margin-top: 28px; font-weight: 700; color: #14293d; text-decoration: none; }
+    body {
+      background: #f8f5ee;
+    }
+    .blog-page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 120px 24px 70px;
+    }
+    .blog-hero {
+      background: #ffffff;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 20px 55px rgba(15, 32, 50, 0.12);
+      margin-bottom: 34px;
+    }
+    .blog-hero-img {
+      width: 100%;
+      height: 390px;
+      object-fit: cover;
+      display: block;
+      background: #14293d;
+    }
+    .blog-header {
+      padding: 36px;
+    }
+    .blog-header .category {
+      display: inline-block;
+      margin-bottom: 14px;
+    }
+    .blog-header h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.1rem, 5vw, 4rem);
+      line-height: 1.05;
+      margin-bottom: 16px;
+      color: #14293d;
+    }
+    .blog-meta {
+      color: #6b7280;
+      font-weight: 600;
+    }
+    .blog-content {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 42px;
+      box-shadow: 0 16px 45px rgba(15, 32, 50, 0.08);
+    }
+    .blog-content p {
+      font-size: 1.08rem;
+      line-height: 1.9;
+      color: #243447;
+      margin-bottom: 22px;
+    }
+    .blog-content h2 {
+      font-size: 1.55rem;
+      margin: 38px 0 16px;
+      color: #14293d;
+    }
+    .blog-content blockquote {
+      border-left: 4px solid #c6a269;
+      padding: 14px 22px;
+      margin: 24px 0;
+      background: #f8f5ee;
+      color: #243447;
+      font-style: italic;
+      border-radius: 12px;
+    }
+    .blog-content ul {
+      margin: 18px 0 24px 24px;
+      color: #243447;
+      line-height: 1.8;
+    }
+    .math-block {
+      background: #f8f5ee;
+      border: 1px solid #e8dcc3;
+      border-radius: 14px;
+      padding: 18px;
+      margin: 18px 0 24px;
+      text-align: center;
+      font-weight: 700;
+      color: #14293d;
+      font-size: 1.15rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 28px;
+      font-weight: 700;
+      color: #14293d;
+      text-decoration: none;
+    }
     @media (max-width: 700px) {
-      .blog-page { padding-top: 95px; }
-      .blog-hero img { height: 250px; }
-      .blog-header, .blog-content { padding: 26px; }
+      .blog-page {
+        padding-top: 95px;
+      }
+      .blog-hero-img {
+        height: 250px;
+      }
+      .blog-header, .blog-content {
+        padding: 26px;
+      }
     }
   </style>
 </head>
@@ -46,47 +128,52 @@
   <main class="blog-page">
     <article>
       <div class="blog-hero">
-        <img src="../images/blogs/the-dutch-disease-when-wealth-becomes-a-curse.jpg" alt="The Dutch Disease: When Wealth Becomes a Curse">
+        <img src="../images/blogs/the-dutch-disease-when-wealth-becomes-a-curse.jpg" alt="The Dutch Disease: When Wealth Becomes a Curse" class="blog-hero-img" onerror="this.style.display='none'">
         <div class="blog-header">
-          <span class="category">Natural Resources · Dutch Disease</span>
+          <span class="category">Development Economics · Natural Resources</span>
           <h1>The Dutch Disease: When Wealth Becomes a Curse</h1>
           <p class="blog-meta">By Aissam Boudrouz · Book Chapter</p>
         </div>
       </div>
+
       <div class="blog-content">
         <p>It all started with a discovery — not of gold, but of gas.</p>
-        <p>In the early 1960s, in the quiet northern city of Groningen, the Netherlands struck what seemed like pure luck: vast underground reserves of natural gas.<br>Overnight, the country became one of the world’s major energy exporters.<br>The government rejoiced, the newspapers celebrated, and the future looked brighter than ever.</p>
-        <p>But only a few years later, something strange happened.<br>The Dutch economy — instead of booming — began to slow down.<br>Factories closed, unemployment rose, and industrial exports fell.<br>There was no global crisis, no war, no political turmoil.</p>
-        <p>So what happened?</p>
-        <p>Economists called it the Dutch Disease — the paradox of a nation becoming weaker after finding new wealth.</p>
-        <h2>Page 1 – The hidden mechanism of prosperity</h2>
-        <p>Here’s how it works.</p>
-        <p>When a country discovers valuable natural resources — oil, gas, or minerals — the new exports bring in massive foreign currency inflows.<br>That sudden success pushes up the value of the national currency.</p>
-        <p>At first, it sounds great — a stronger currency, a richer country.<br>But as the exchange rate rises, it becomes more expensive to produce and export other goods, like manufactured products or agricultural items.</p>
-        <p>Investors, looking for lower costs, start moving their money elsewhere.<br>Factories shut down, industries shrink, and workers lose their jobs.</p>
-        <p>Soon, the economy becomes dangerously dependent on one sector — the extractive one — which employs very few people.</p>
-        <p>What began as a blessing slowly turns into an illness.</p>
-        <h2>Page 2 – From the North Sea to the heart of Africa</h2>
-        <p>The Dutch Disease didn’t stop in Europe.<br>It quietly spread, like an invisible pattern, across the world.</p>
-        <p>Look at Africa today:<br>countries rich in oil, gas, and minerals often remain among the poorest on Earth.</p>
-        <p>Take coltan, for example — a rare mineral used in almost every smartphone and laptop.<br>Nearly 70% of the world’s supply comes from African soil, especially the Democratic Republic of Congo.</p>
-        <p>Or look at Nigeria, Angola, Algeria, Libya, and Egypt — nations with vast oil and gas reserves.<br>Yet many of them still struggle with poverty, unemployment, and political instability.</p>
-        <p>The paradox persists:</p>
-        <p>the richer the ground, the poorer the people.</p>
-        <h2>Page 3 – The economic trap</h2>
-        <p>When resource wealth floods a country, it often reshapes its economy around extraction.<br>The currency appreciates, manufacturing becomes uncompetitive, and imports replace domestic production.</p>
-        <p>Governments start using their resource revenues to buy foreign goods and subsidize consumption —<br>but that creates a fragile balance, vulnerable to any drop in global prices.</p>
-        <p>Once the price of oil or gas falls, the entire economy trembles.<br>And when jobs disappear, anger rises.</p>
-        <p>Some countries, like Qatar and the United Arab Emirates, saw the trap coming and diversified early —<br>investing in tourism, finance, and technology.</p>
-        <p>Others, like Venezuela, fell deep into the cycle: nationalization, over-reliance, inflation, and collapse.</p>
-        <h2>Page 4 – The deeper lesson</h2>
-        <p>The Dutch Disease isn’t really about resources.<br>It’s about dependence — on one thing, one price, one dream.</p>
-        <p>An economy that forgets to diversify its skills, industries, and ideas will always be fragile,<br>no matter how much treasure lies beneath its soil.</p>
-        <p>In the end, true wealth isn’t what you find underground —<br>it’s what you build above it. 🌍💡</p>
+  <p>In the early 1960s, in the quiet northern city of <strong>Groningen</strong>, the Netherlands struck what seemed like pure luck: vast underground reserves of natural gas. Overnight, the country became one of the world's major energy exporters. The government rejoiced, the newspapers celebrated, and the future looked brighter than ever.</p>
+  <p>But only a few years later, something strange happened. The Dutch economy — instead of booming — began to slow down. Factories closed, unemployment rose, and industrial exports fell. There was no global crisis, no war, no political turmoil.</p>
+  <p>So what happened?</p>
+  <p>Economists called it <strong>the Dutch Disease</strong> — the paradox of a nation becoming weaker after finding new wealth.</p>
+
+  <h2>The hidden mechanism of prosperity</h2>
+  <p>Here's how it works.</p>
+  <p>When a country discovers valuable natural resources — oil, gas, or minerals — the new exports bring in massive foreign currency inflows. That sudden success pushes up the value of the national currency.</p>
+  <p>At first, it sounds great — a stronger currency, a richer country. But as the exchange rate rises, it becomes more expensive to produce and export other goods, like manufactured products or agricultural items.</p>
+  <p>Investors, looking for lower costs, start moving their money elsewhere. Factories shut down, industries shrink, and workers lose their jobs.</p>
+  <p>Soon, the economy becomes dangerously dependent on one sector — the extractive one — which employs very few people.</p>
+  <p>What began as a blessing slowly turns into an illness.</p>
+
+  <h2>From the North Sea to the heart of Africa</h2>
+  <p>The Dutch Disease didn't stop in Europe. It quietly spread, like an invisible pattern, across the world.</p>
+  <p>Look at Africa today: countries rich in oil, gas, and minerals often remain among the poorest on Earth.</p>
+  <p>Take <strong>coltan</strong>, for example — a rare mineral used in almost every smartphone and laptop. Nearly 70% of the world's supply comes from African soil, especially the <strong>Democratic Republic of Congo.</strong></p>
+  <p>Or look at <strong>Nigeria, Angola, Algeria, Libya, and Egypt</strong> — nations with vast oil and gas reserves. Yet many of them still struggle with poverty, unemployment, and political instability.</p>
+  <p>The paradox persists: the richer the ground, the poorer the people.</p>
+
+  <h2>The economic trap</h2>
+  <p>When resource wealth floods a country, it often reshapes its economy around extraction. The currency appreciates, manufacturing becomes uncompetitive, and imports replace domestic production.</p>
+  <p>Governments start using their resource revenues to buy foreign goods and subsidize consumption — but that creates a fragile balance, vulnerable to any drop in global prices.</p>
+  <p>Once the price of oil or gas falls, the entire economy trembles. And when jobs disappear, anger rises.</p>
+  <p>Some countries, like <strong>Qatar and the United Arab Emirates</strong>, saw the trap coming and diversified early — investing in tourism, finance, and technology.</p>
+  <p>Others, like <strong>Venezuela</strong>, fell deep into the cycle: nationalization, over-reliance, inflation, and collapse.</p>
+
+  <h2>The deeper lesson</h2>
+  <p>The Dutch Disease isn't really about resources. It's about dependence — on one thing, one price, one dream.</p>
+  <p>An economy that forgets to diversify its skills, industries, and ideas will always be fragile, no matter how much treasure lies beneath its soil.</p>
+  <p>In the end, true wealth isn't what you find underground — it's what you build above it. 🌍💡</p>
         <a class="back-link" href="../index.html#articles">← Back to Articles</a>
       </div>
     </article>
   </main>
+
   <footer>© 2026 Aissam Boudrouz. All rights reserved.</footer>
   <script src="../script.js"></script>
 </body>

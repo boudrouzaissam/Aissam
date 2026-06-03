@@ -3,29 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Café Owner and Keynes | Aissam Boudrouz</title>
-  <meta name="description" content="It was sometime around 2019, before I moved to Canada — a warm evening in El Jadida, the kind of coastal calm that makes you want to sit outside and let time pass slowly. I was at my favorit..." />
+  <title>The Café Owner and Keynes — Aissam Boudrouz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
   <style>
-    body { background: #f8f5ee; }
-    .blog-page { max-width: 980px; margin: 0 auto; padding: 120px 24px 70px; }
-    .blog-hero { background: #fff; border-radius: 28px; overflow: hidden; box-shadow: 0 20px 55px rgba(15,32,50,.12); margin-bottom: 34px; }
-    .blog-hero img { width: 100%; height: 390px; object-fit: cover; display: block; }
-    .blog-header { padding: 36px; }
-    .blog-header .category { display: inline-block; margin-bottom: 14px; }
-    .blog-header h1 { font-family: "Playfair Display", serif; font-size: clamp(2.1rem, 5vw, 4rem); line-height: 1.05; margin-bottom: 16px; color: #14293d; }
-    .blog-meta { color: #6b7280; font-weight: 600; }
-    .blog-content { background: #fff; border-radius: 28px; padding: 42px; box-shadow: 0 16px 45px rgba(15,32,50,.08); }
-    .blog-content p { font-size: 1.08rem; line-height: 1.9; color: #243447; margin-bottom: 22px; }
-    .blog-content h2 { font-size: 1.55rem; margin: 38px 0 16px; color: #14293d; }
-    .back-link { display: inline-block; margin-top: 28px; font-weight: 700; color: #14293d; text-decoration: none; }
+    body {
+      background: #f8f5ee;
+    }
+    .blog-page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 120px 24px 70px;
+    }
+    .blog-hero {
+      background: #ffffff;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 20px 55px rgba(15, 32, 50, 0.12);
+      margin-bottom: 34px;
+    }
+    .blog-hero-img {
+      width: 100%;
+      height: 390px;
+      object-fit: cover;
+      display: block;
+      background: #14293d;
+    }
+    .blog-header {
+      padding: 36px;
+    }
+    .blog-header .category {
+      display: inline-block;
+      margin-bottom: 14px;
+    }
+    .blog-header h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.1rem, 5vw, 4rem);
+      line-height: 1.05;
+      margin-bottom: 16px;
+      color: #14293d;
+    }
+    .blog-meta {
+      color: #6b7280;
+      font-weight: 600;
+    }
+    .blog-content {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 42px;
+      box-shadow: 0 16px 45px rgba(15, 32, 50, 0.08);
+    }
+    .blog-content p {
+      font-size: 1.08rem;
+      line-height: 1.9;
+      color: #243447;
+      margin-bottom: 22px;
+    }
+    .blog-content h2 {
+      font-size: 1.55rem;
+      margin: 38px 0 16px;
+      color: #14293d;
+    }
+    .blog-content blockquote {
+      border-left: 4px solid #c6a269;
+      padding: 14px 22px;
+      margin: 24px 0;
+      background: #f8f5ee;
+      color: #243447;
+      font-style: italic;
+      border-radius: 12px;
+    }
+    .blog-content ul {
+      margin: 18px 0 24px 24px;
+      color: #243447;
+      line-height: 1.8;
+    }
+    .math-block {
+      background: #f8f5ee;
+      border: 1px solid #e8dcc3;
+      border-radius: 14px;
+      padding: 18px;
+      margin: 18px 0 24px;
+      text-align: center;
+      font-weight: 700;
+      color: #14293d;
+      font-size: 1.15rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 28px;
+      font-weight: 700;
+      color: #14293d;
+      text-decoration: none;
+    }
     @media (max-width: 700px) {
-      .blog-page { padding-top: 95px; }
-      .blog-hero img { height: 250px; }
-      .blog-header, .blog-content { padding: 26px; }
+      .blog-page {
+        padding-top: 95px;
+      }
+      .blog-hero-img {
+        height: 250px;
+      }
+      .blog-header, .blog-content {
+        padding: 26px;
+      }
     }
   </style>
 </head>
@@ -46,40 +128,45 @@
   <main class="blog-page">
     <article>
       <div class="blog-hero">
-        <img src="../images/blogs/the-cafe-owner-and-keynes.jpg" alt="The Café Owner and Keynes">
+        <img src="../images/blogs/the-cafe-owner-and-keynes.jpg" alt="The Café Owner and Keynes" class="blog-hero-img" onerror="this.style.display='none'">
         <div class="blog-header">
           <span class="category">Keynesian Economics · Anticipated Demand</span>
           <h1>The Café Owner and Keynes</h1>
           <p class="blog-meta">By Aissam Boudrouz · Book Chapter</p>
         </div>
       </div>
+
       <div class="blog-content">
-        <p>It was sometime around 2019, before I moved to Canada — a warm evening in El Jadida, the kind of coastal calm that makes you want to sit outside and let time pass slowly.</p>
-        <p>I was at my favorite café, the one near the corniche with the noisy TV and the best mint tea in town. The waiter already knew my order — glass of tea, extra mint, less sugar.</p>
-        <p>The Africa Cup of Nations was about to begin, and everyone was talking about football. The terrace was buzzing — chairs scraping the tiles, voices rising, arguments over who would score first.</p>
-        <p>And me? I was there to watch Barcelona, as usual.<br>Yes — I’ve been a Barça fan since the Ronaldinho days. That smile, that joy, the magic of his feet — that’s when football stopped being just a sport for me.</p>
-        <p>As I looked around, I noticed something new. The café was fuller than ever.<br>Dozens of bright plastic chairs had appeared out of nowhere, stretching all the way to the sidewalk.</p>
-        <p>I laughed quietly. I knew exactly what was going on.</p>
-        <h2>Page 1 – The businessman with a theory</h2>
-        <p>Moul l’qahwa — the café owner — was walking around like a field marshal before a final.<br>A week earlier, none of those chairs existed. But now, there were at least twenty.</p>
-        <p>That’s when my economist brain woke up.</p>
-        <p>He wasn’t just preparing for the match — he was unconsciously applying Keynesian economics, what we call demande anticipée or anticipated demand.</p>
-        <p>Keynes once explained that investors must predict tomorrow’s demand before they act today, otherwise they risk overproduction or loss.<br>And here was Moul l’qahwa, the Moroccan version of a Keynesian entrepreneur — expanding his “capacity” because he anticipated a surge in customers once the national team started playing.</p>
-        <p>He had invested before the event — not because demand was already there, but because he believed it would come.</p>
-        <h2>Page 2 – A lesson in optimism</h2>
-        <p>I imagined him earlier that week, sitting behind the counter, counting tables and thinking aloud:</p>
-        <p>“Tomorrow’s the Cup. People will come in groups, shouting, drinking tea. I need more chairs.”</p>
-        <p>So he went to the market, bought the cheapest plastic chairs — not the fancy kind, the “God help your back” kind — and filled the café with them.</p>
-        <p>That’s demand anticipation in action.<br>When entrepreneurs expect higher demand, they invest today to meet it tomorrow.<br>It’s one of the quiet ways optimism fuels the economy — small actions that multiply into movement.</p>
-        <h2>Page 3 – When theory meets reality</h2>
-        <p>Of course, every theory faces the real world.<br>If the national team got eliminated early — and as any Moroccan knows, that risk was always high — the café would empty again.<br>Those new chairs would become just plastic memories stacked in a corner, symbols of the fine line between smart planning and overconfidence.</p>
-        <p>So there I was, a young economist-to-be, sitting in a noisy Moroccan café, sipping mint tea and watching both football and economics unfold before my eyes.</p>
-        <p>Maybe Keynes never imagined his theory being tested in a seaside café before a football match.<br>But if he had spent one night there, I’m sure he’d have updated his book with a new chapter called:</p>
-        <p>**“The Plastic Chair Principle</p>
+        <p>It was sometime around 2019, before I moved to Canada — a warm evening in <strong>El Jadida</strong>, the kind of coastal calm that makes you want to sit outside and let time pass slowly.</p>
+  <p>I was at my favorite café, the one near the corniche with the noisy TV and the best mint tea in town. The waiter already knew my order — glass of tea, extra mint, less sugar.</p>
+  <p>The Africa Cup of Nations was about to begin, and everyone was talking about football. The terrace was buzzing — chairs scraping the tiles, voices rising, arguments over who would score first.</p>
+  <p>And me? I was there to watch <strong>Barcelona</strong>, as usual. Yes — I've been a Barça fan since the <strong>Ronaldinho</strong> days. That smile, that joy, the magic of his feet — that's when football stopped being just a sport for me.</p>
+  <p>As I looked around, I noticed something new. The café was fuller than ever. Dozens of <strong>bright plastic chairs</strong> had appeared out of nowhere, stretching all the way to the sidewalk.</p>
+  <p>I laughed quietly. I knew exactly what was going on.</p>
+
+  <h2>The businessman with a theory</h2>
+  <p><em>Moul l'qahwa</em> — the café owner — was walking around like a field marshal before a final. A week earlier, none of those chairs existed. But now, there were at least twenty.</p>
+  <p>That's when my economist brain woke up.</p>
+  <p>He wasn't just preparing for the match — he was unconsciously applying <strong>Keynesian economics</strong>, what we call <em>demande anticipée</em> or <em>anticipated demand.</em></p>
+  <p>Keynes once explained that investors must predict tomorrow's demand before they act today, otherwise they risk overproduction or loss. And here was <em>Moul l'qahwa</em>, the Moroccan version of a Keynesian entrepreneur — expanding his "capacity" because he anticipated a surge in customers once the national team started playing.</p>
+  <p>He had invested before the event — not because demand was already there, but because he <em>believed</em> it would come.</p>
+
+  <h2>A lesson in optimism</h2>
+  <p>I imagined him earlier that week, sitting behind the counter, counting tables and thinking aloud:</p>
+  <p><em>"Tomorrow's the Cup. People will come in groups, shouting, drinking tea. I need more chairs."</em></p>
+  <p>So he went to the market, bought the cheapest plastic chairs — not the fancy kind, the <em>"God help your back"</em> kind — and filled the café with them.</p>
+  <p>That's <strong>demand anticipation</strong> in action. When entrepreneurs expect higher demand, they invest today to meet it tomorrow. It's one of the quiet ways optimism fuels the economy — small actions that multiply into movement.</p>
+
+  <h2>When theory meets reality</h2>
+  <p>Of course, every theory faces the real world. If the national team got eliminated early — and as any Moroccan knows, that risk was always high — the café would empty again. Those new chairs would become just plastic memories stacked in a corner, symbols of the fine line between smart planning and overconfidence.</p>
+  <p>So there I was, a young economist-to-be, sitting in a noisy Moroccan café, sipping mint tea and watching both football and economics unfold before my eyes.</p>
+  <p>Maybe Keynes never imagined his theory being tested in a seaside café before a football match. But if he had spent one night there, I'm sure he'd have updated his book with a new chapter called:</p>
+  <p><strong>"The Plastic Chair Principle."</strong></p>
         <a class="back-link" href="../index.html#articles">← Back to Articles</a>
       </div>
     </article>
   </main>
+
   <footer>© 2026 Aissam Boudrouz. All rights reserved.</footer>
   <script src="../script.js"></script>
 </body>

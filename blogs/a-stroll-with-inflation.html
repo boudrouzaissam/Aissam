@@ -3,29 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A Stroll with Inflation | Aissam Boudrouz</title>
-  <meta name="description" content="One morning, I got into a taxi, and before I could even fasten my seatbelt, the driver sighed and said, “Everything’s become expensive these days… we can’t even afford a kilo of meat anymore..." />
+  <title>A Stroll with Inflation — Aissam Boudrouz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
   <style>
-    body { background: #f8f5ee; }
-    .blog-page { max-width: 980px; margin: 0 auto; padding: 120px 24px 70px; }
-    .blog-hero { background: #fff; border-radius: 28px; overflow: hidden; box-shadow: 0 20px 55px rgba(15,32,50,.12); margin-bottom: 34px; }
-    .blog-hero img { width: 100%; height: 390px; object-fit: cover; display: block; }
-    .blog-header { padding: 36px; }
-    .blog-header .category { display: inline-block; margin-bottom: 14px; }
-    .blog-header h1 { font-family: "Playfair Display", serif; font-size: clamp(2.1rem, 5vw, 4rem); line-height: 1.05; margin-bottom: 16px; color: #14293d; }
-    .blog-meta { color: #6b7280; font-weight: 600; }
-    .blog-content { background: #fff; border-radius: 28px; padding: 42px; box-shadow: 0 16px 45px rgba(15,32,50,.08); }
-    .blog-content p { font-size: 1.08rem; line-height: 1.9; color: #243447; margin-bottom: 22px; }
-    .blog-content h2 { font-size: 1.55rem; margin: 38px 0 16px; color: #14293d; }
-    .back-link { display: inline-block; margin-top: 28px; font-weight: 700; color: #14293d; text-decoration: none; }
+    body {
+      background: #f8f5ee;
+    }
+    .blog-page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 120px 24px 70px;
+    }
+    .blog-hero {
+      background: #ffffff;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 20px 55px rgba(15, 32, 50, 0.12);
+      margin-bottom: 34px;
+    }
+    .blog-hero-img {
+      width: 100%;
+      height: 390px;
+      object-fit: cover;
+      display: block;
+      background: #14293d;
+    }
+    .blog-header {
+      padding: 36px;
+    }
+    .blog-header .category {
+      display: inline-block;
+      margin-bottom: 14px;
+    }
+    .blog-header h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.1rem, 5vw, 4rem);
+      line-height: 1.05;
+      margin-bottom: 16px;
+      color: #14293d;
+    }
+    .blog-meta {
+      color: #6b7280;
+      font-weight: 600;
+    }
+    .blog-content {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 42px;
+      box-shadow: 0 16px 45px rgba(15, 32, 50, 0.08);
+    }
+    .blog-content p {
+      font-size: 1.08rem;
+      line-height: 1.9;
+      color: #243447;
+      margin-bottom: 22px;
+    }
+    .blog-content h2 {
+      font-size: 1.55rem;
+      margin: 38px 0 16px;
+      color: #14293d;
+    }
+    .blog-content blockquote {
+      border-left: 4px solid #c6a269;
+      padding: 14px 22px;
+      margin: 24px 0;
+      background: #f8f5ee;
+      color: #243447;
+      font-style: italic;
+      border-radius: 12px;
+    }
+    .blog-content ul {
+      margin: 18px 0 24px 24px;
+      color: #243447;
+      line-height: 1.8;
+    }
+    .math-block {
+      background: #f8f5ee;
+      border: 1px solid #e8dcc3;
+      border-radius: 14px;
+      padding: 18px;
+      margin: 18px 0 24px;
+      text-align: center;
+      font-weight: 700;
+      color: #14293d;
+      font-size: 1.15rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 28px;
+      font-weight: 700;
+      color: #14293d;
+      text-decoration: none;
+    }
     @media (max-width: 700px) {
-      .blog-page { padding-top: 95px; }
-      .blog-hero img { height: 250px; }
-      .blog-header, .blog-content { padding: 26px; }
+      .blog-page {
+        padding-top: 95px;
+      }
+      .blog-hero-img {
+        height: 250px;
+      }
+      .blog-header, .blog-content {
+        padding: 26px;
+      }
     }
   </style>
 </head>
@@ -46,48 +128,54 @@
   <main class="blog-page">
     <article>
       <div class="blog-hero">
-        <img src="../images/blogs/a-stroll-with-inflation.jpg" alt="A Stroll with Inflation">
+        <img src="../images/blogs/a-stroll-with-inflation.jpg" alt="A Stroll with Inflation" class="blog-hero-img" onerror="this.style.display='none'">
         <div class="blog-header">
-          <span class="category">Inflation · Purchasing Power</span>
+          <span class="category">Macroeconomics · Inflation · Purchasing Power</span>
           <h1>A Stroll with Inflation</h1>
           <p class="blog-meta">By Aissam Boudrouz · Book Chapter</p>
         </div>
       </div>
+
       <div class="blog-content">
         <p>One morning, I got into a taxi, and before I could even fasten my seatbelt, the driver sighed and said,</p>
-        <p>“Everything’s become expensive these days… we can’t even afford a kilo of meat anymore. The prices just keep rising.”</p>
-        <p>He wasn’t angry, just tired. It’s the same sentence I’ve been hearing from almost everyone lately — in taxis, cafés, grocery stores, even from my parents when I visit.</p>
-        <p>At home, my father often repeats, half nostalgic, half amused:</p>
-        <p>“You know, son, thirty years ago, 300 dirhams were enough to feed a family for a week. A hundred used to feel like a fortune.”</p>
-        <p>I smile politely every time, but I know he’s right.<br>We’re all living the same story — the same frustration that the same amount of money buys less and less each year.</p>
-        <h2>Page 1 – The quiet conversation we all share</h2>
-        <p>Prices rise quietly, like the tide.<br>You don’t notice it day by day — only when you go back to buy the same thing and realize it costs a little more.</p>
-        <p>The driver’s words stayed with me that morning. When I got out of the taxi, I kept thinking:<br>Why does it feel like our money is shrinking while everything else grows taller — rents, bills, groceries, even coffee?</p>
-        <p>That’s when the economist in me woke up, not to give a lecture, but just to understand this small discomfort we all share.</p>
-        <h2>Page 2 – The invisible erosion</h2>
-        <p>If we look at it simply, what’s really happening is that the purchasing power of money — its ability to buy goods and services — is quietly declining over time.</p>
-        <p>Let’s call it P, our purchasing power.<br>And let’s call our wages W, and the price level — that invisible thing that makes everything more expensive — L.</p>
-        <p>In an ideal world, as prices (L) rise, wages (W) would rise at the same speed, so that P stays the same.<br>In other words, the growth of what we earn would match the growth of what we spend.</p>
-        <p>It’s like walking up an escalator that’s moving down.<br>If you walk fast enough, you stay in place. If not, you slide backward, even if you’re still walking.</p>
-        <h2>Page 3 – The ideal balance</h2>
-        <p>Mathematically, economists would say:<br>For purchasing power P to stay constant between two moments — say t₀ and t₁ — the rate of wage growth must equal the rate of price growth.</p>
-        <p>Or more simply:</p>
-        <p>W₁ / L₁ = W₀ / L₀</p>
-        <p>That’s the dream scenario — when what you earn keeps pace with what things cost.</p>
-        <p>But we all know life isn’t that neat. Wages don’t rise every month. Markets have their own rules, and salaries are often slow to react — what economists call wage rigidity.</p>
-        <p>Meanwhile, prices? They have no patience. They go up when they want to.</p>
-        <p>So we find ourselves chasing the same balance our parents once had, watching numbers grow on paper but shrink in reality.</p>
-        <h2>Page 4 – Walking with inflation</h2>
-        <p>That day, as I walked home from the taxi ride, I thought about how inflation isn’t just an economic term — it’s a feeling.<br>It’s the quiet anxiety that your money is running faster than you can catch it.</p>
-        <p>But understanding it, even just a little, brings calm.<br>Because once you see the mechanism behind it — the relationship between prices, wages, and time — it stops feeling like chaos and starts looking like a pattern.</p>
-        <p>Maybe that’s what economics really gives us — not control, but clarity.</p>
-        <p>So next time someone says, “Everything’s getting expensive,”<br>I might just smile and answer,</p>
-        <p>“Yes, but now we know why.”</p>
-        <p>And then I’ll still complain about the bread price — because understanding doesn’t make it cheaper. 🍞😄</p>
+  <p><em>"Everything's become expensive these days… we can't even afford a kilo of meat anymore. The prices just keep rising."</em></p>
+  <p>He wasn't angry, just tired. It's the same sentence I've been hearing from almost everyone lately — in taxis, cafés, grocery stores, even from my parents when I visit.</p>
+  <p>At home, my father often repeats, half nostalgic, half amused:</p>
+  <p><em>"You know, son, thirty years ago, 300 dirhams were enough to feed a family for a week. A hundred used to feel like a fortune."</em></p>
+  <p>I smile politely every time, but I know he's right. We're all living the same story — the same frustration that the same amount of money buys less and less each year.</p>
+
+  <h2>The quiet conversation we all share</h2>
+  <p>Prices rise quietly, like the tide. You don't notice it day by day — only when you go back to buy the same thing and realize it costs a little more.</p>
+  <p>The driver's words stayed with me that morning. When I got out of the taxi, I kept thinking: Why does it feel like our money is shrinking while everything else grows taller — rents, bills, groceries, even coffee?</p>
+  <p>That's when the economist in me woke up, not to give a lecture, but just to understand this small discomfort we all share.</p>
+
+  <h2>The invisible erosion</h2>
+  <p>If we look at it simply, what's really happening is that <strong>the purchasing power of money</strong> — its ability to buy goods and services — is quietly declining over time.</p>
+  <p>Let's call it <strong>P</strong>, our purchasing power. And let's call our wages <strong>W</strong>, and the price level — that invisible thing that makes everything more expensive — <strong>L</strong>.</p>
+  <p>In an ideal world, as prices (L) rise, wages (W) would rise at the same speed, so that <strong>P stays the same</strong>. In other words, the growth of what we earn would match the growth of what we spend.</p>
+  <p>It's like walking up an escalator that's moving down. If you walk fast enough, you stay in place. If not, you slide backward, even if you're still walking.</p>
+
+  <h2>The ideal balance</h2>
+  <p>Mathematically, economists would say: for purchasing power <strong>P</strong> to stay constant between two moments — say <em>t₀</em> and <em>t₁</em> — the rate of wage growth must equal the rate of price growth.</p>
+  <p>Or more simply:</p>
+  <div class="math-block">W₁ / L₁ = W₀ / L₀</div>
+  <p>That's the dream scenario — when what you earn keeps pace with what things cost.</p>
+  <p>But we all know life isn't that neat. Wages don't rise every month. Markets have their own rules, and salaries are often slow to react — what economists call <em>wage rigidity</em>.</p>
+  <p>Meanwhile, prices? They have no patience. They go up when they want to.</p>
+  <p>So we find ourselves chasing the same balance our parents once had, watching numbers grow on paper but shrink in reality.</p>
+
+  <h2>Walking with inflation</h2>
+  <p>That day, as I walked home from the taxi ride, I thought about how inflation isn't just an economic term — it's a feeling. It's the quiet anxiety that your money is running faster than you can catch it.</p>
+  <p>But understanding it, even just a little, brings calm. Because once you see the mechanism behind it — the relationship between prices, wages, and time — it stops feeling like chaos and starts looking like a pattern.</p>
+  <p>Maybe that's what economics really gives us — not control, but clarity.</p>
+  <p>So next time someone says, "Everything's getting expensive," I might just smile and answer,</p>
+  <p><em>"Yes, but now we know <strong>why</strong>."</em></p>
+  <p>And then I'll still complain about the bread price — because understanding doesn't make it cheaper. 🍞😄</p>
         <a class="back-link" href="../index.html#articles">← Back to Articles</a>
       </div>
     </article>
   </main>
+
   <footer>© 2026 Aissam Boudrouz. All rights reserved.</footer>
   <script src="../script.js"></script>
 </body>

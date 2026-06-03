@@ -3,29 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Information, Trust, and the Hidden Defect | Aissam Boudrouz</title>
-  <meta name="description" content="It was just a few evenings ago. I was sitting at home, watching one of my favorite Moroccan TV programs — a show where entrepreneurs present their projects to investors. I’ve always liked th..." />
+  <title>Information, Trust, and the Hidden Defect — Aissam Boudrouz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
   <style>
-    body { background: #f8f5ee; }
-    .blog-page { max-width: 980px; margin: 0 auto; padding: 120px 24px 70px; }
-    .blog-hero { background: #fff; border-radius: 28px; overflow: hidden; box-shadow: 0 20px 55px rgba(15,32,50,.12); margin-bottom: 34px; }
-    .blog-hero img { width: 100%; height: 390px; object-fit: cover; display: block; }
-    .blog-header { padding: 36px; }
-    .blog-header .category { display: inline-block; margin-bottom: 14px; }
-    .blog-header h1 { font-family: "Playfair Display", serif; font-size: clamp(2.1rem, 5vw, 4rem); line-height: 1.05; margin-bottom: 16px; color: #14293d; }
-    .blog-meta { color: #6b7280; font-weight: 600; }
-    .blog-content { background: #fff; border-radius: 28px; padding: 42px; box-shadow: 0 16px 45px rgba(15,32,50,.08); }
-    .blog-content p { font-size: 1.08rem; line-height: 1.9; color: #243447; margin-bottom: 22px; }
-    .blog-content h2 { font-size: 1.55rem; margin: 38px 0 16px; color: #14293d; }
-    .back-link { display: inline-block; margin-top: 28px; font-weight: 700; color: #14293d; text-decoration: none; }
+    body {
+      background: #f8f5ee;
+    }
+    .blog-page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 120px 24px 70px;
+    }
+    .blog-hero {
+      background: #ffffff;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 20px 55px rgba(15, 32, 50, 0.12);
+      margin-bottom: 34px;
+    }
+    .blog-hero-img {
+      width: 100%;
+      height: 390px;
+      object-fit: cover;
+      display: block;
+      background: #14293d;
+    }
+    .blog-header {
+      padding: 36px;
+    }
+    .blog-header .category {
+      display: inline-block;
+      margin-bottom: 14px;
+    }
+    .blog-header h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.1rem, 5vw, 4rem);
+      line-height: 1.05;
+      margin-bottom: 16px;
+      color: #14293d;
+    }
+    .blog-meta {
+      color: #6b7280;
+      font-weight: 600;
+    }
+    .blog-content {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 42px;
+      box-shadow: 0 16px 45px rgba(15, 32, 50, 0.08);
+    }
+    .blog-content p {
+      font-size: 1.08rem;
+      line-height: 1.9;
+      color: #243447;
+      margin-bottom: 22px;
+    }
+    .blog-content h2 {
+      font-size: 1.55rem;
+      margin: 38px 0 16px;
+      color: #14293d;
+    }
+    .blog-content blockquote {
+      border-left: 4px solid #c6a269;
+      padding: 14px 22px;
+      margin: 24px 0;
+      background: #f8f5ee;
+      color: #243447;
+      font-style: italic;
+      border-radius: 12px;
+    }
+    .blog-content ul {
+      margin: 18px 0 24px 24px;
+      color: #243447;
+      line-height: 1.8;
+    }
+    .math-block {
+      background: #f8f5ee;
+      border: 1px solid #e8dcc3;
+      border-radius: 14px;
+      padding: 18px;
+      margin: 18px 0 24px;
+      text-align: center;
+      font-weight: 700;
+      color: #14293d;
+      font-size: 1.15rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 28px;
+      font-weight: 700;
+      color: #14293d;
+      text-decoration: none;
+    }
     @media (max-width: 700px) {
-      .blog-page { padding-top: 95px; }
-      .blog-hero img { height: 250px; }
-      .blog-header, .blog-content { padding: 26px; }
+      .blog-page {
+        padding-top: 95px;
+      }
+      .blog-hero-img {
+        height: 250px;
+      }
+      .blog-header, .blog-content {
+        padding: 26px;
+      }
     }
   </style>
 </head>
@@ -46,42 +128,46 @@
   <main class="blog-page">
     <article>
       <div class="blog-hero">
-        <img src="../images/blogs/information-trust-and-the-hidden-defect.jpg" alt="Information, Trust, and the Hidden Defect">
+        <img src="../images/blogs/information-trust-and-the-hidden-defect.jpg" alt="Information, Trust, and the Hidden Defect" class="blog-hero-img" onerror="this.style.display='none'">
         <div class="blog-header">
-          <span class="category">Information Asymmetry · Trust</span>
+          <span class="category">Information Economics · Nobel Prize Theory</span>
           <h1>Information, Trust, and the Hidden Defect</h1>
           <p class="blog-meta">By Aissam Boudrouz · Book Chapter</p>
         </div>
       </div>
+
       <div class="blog-content">
-        <p>It was just a few evenings ago.<br>I was sitting at home, watching one of my favorite Moroccan TV programs — a show where entrepreneurs present their projects to investors.<br>I’ve always liked these kinds of programs. They make me believe again in the creativity and potential of our country.</p>
-        <p>That night, one investor’s idea caught my attention more than the others.<br>It wasn’t complicated or flashy — it was simple, clear, and brilliant.</p>
-        <p>And for a moment, I wondered:</p>
-        <p>“Did this person read the Nobel Prize paper from 2001 by Joseph Stiglitz, Michael Spence, and George Akerlof?”</p>
-        <p>Because without even realizing it, this entrepreneur had just solved the exact problem those three economists wrote about:<br>the asymmetry of information.</p>
-        <h2>Page 1 – When one side knows more</h2>
-        <p>In economics, information asymmetry happens when two people in a transaction don’t share the same level of knowledge.<br>Usually, one side knows something the other doesn’t — and that creates risk.</p>
-        <p>Take the classic example from Akerlof’s famous paper “The Market for Lemons.”<br>It’s about the used-car market.</p>
-        <p>Imagine you’re buying a second-hand car.<br>The seller knows everything about it — every scratch, every noise, every secret repair.<br>You, the buyer, know nothing except what he tells you.</p>
-        <p>That’s asymmetry.</p>
-        <p>Because of it, many buyers simply avoid the used-car market altogether.<br>They fear being tricked — what economists call adverse selection.<br>And when too many buyers leave, the market shrinks, and everyone loses.</p>
-        <h2>Page 2 – A modern Moroccan solution</h2>
-        <p>The entrepreneur on the show had found a brilliant way to fix this.</p>
-        <p>He created a service that acts as a trust bridge between buyers and sellers of used cars.<br>If you want to buy a car, you tell the company your preferences, and their certified technicians inspect the vehicle in detail.<br>They check every system, every defect, every hidden problem — and then, the company itself becomes the intermediary.</p>
-        <p>You don’t deal with the seller directly; you deal with the trusted third party.<br>And most importantly, they give you something the individual seller never could: a guarantee.</p>
-        <p>It was simple but revolutionary — not in technology, but in trust.</p>
-        <p>This was exactly what Akerlof, Spence, and Stiglitz had been trying to explain for decades:<br>that markets don’t fail because people are bad — they fail because information isn’t equal.</p>
-        <p>Once you fix the flow of information,<br>you fix the market.</p>
-        <h2>Page 3 – When economics meets creativity</h2>
-        <p>Watching that episode, I realized something I’ve always believed:<br>sometimes the smartest economic solutions don’t come from big governments or central banks.<br>They come from small, local minds that understand how people think and trade.</p>
-        <p>By creating transparency, this entrepreneur rebuilt confidence in a market that many people had stopped trusting.</p>
-        <p>Maybe he never read a single academic paper in his life —<br>but he instinctively solved the same problem that earned three professors a Nobel Prize in 2001.</p>
-        <p>And honestly, that night, I didn’t feel like I had just watched a TV show.<br>I felt like I had just seen a theory come to life.</p>
-        <p>So yes, maybe I gave him free publicity in my thoughts —<br>but some ideas deserve it.<br>Because sometimes, economics isn’t just about numbers —<br>it’s about trust, honesty, and the courage to make things clear. 🚗✨</p>
+        <p>It was just a few evenings ago. I was sitting at home, watching one of my favorite Moroccan TV programs — a show where entrepreneurs present their projects to investors. I've always liked these kinds of programs. They make me believe again in the creativity and potential of our country.</p>
+  <p>That night, one investor's idea caught my attention more than the others. It wasn't complicated or flashy — it was simple, clear, and brilliant.</p>
+  <p>And for a moment, I wondered:</p>
+  <p><em>"Did this person read the Nobel Prize paper from 2001 by Joseph Stiglitz, Michael Spence, and George Akerlof?"</em></p>
+  <p>Because without even realizing it, this entrepreneur had just solved the exact problem those three economists wrote about: <strong>the asymmetry of information.</strong></p>
+
+  <h2>When one side knows more</h2>
+  <p>In economics, <em>information asymmetry</em> happens when two people in a transaction don't share the same level of knowledge. Usually, one side knows something the other doesn't — and that creates risk.</p>
+  <p>Take the classic example from Akerlof's famous paper <em>"The Market for Lemons."</em> It's about the <strong>used-car market.</strong></p>
+  <p>Imagine you're buying a second-hand car. The seller knows everything about it — every scratch, every noise, every secret repair. You, the buyer, know nothing except what he tells you.</p>
+  <p>That's asymmetry.</p>
+  <p>Because of it, many buyers simply avoid the used-car market altogether. They fear being tricked — what economists call <strong>adverse selection.</strong> And when too many buyers leave, the market shrinks, and everyone loses.</p>
+
+  <h2>A modern Moroccan solution</h2>
+  <p>The entrepreneur on the show had found a brilliant way to fix this. He created a service that acts as a <strong>trust bridge</strong> between buyers and sellers of used cars. If you want to buy a car, you tell the company your preferences, and their certified technicians inspect the vehicle in detail. They check every system, every defect, every hidden problem — and then, the company itself becomes the intermediary.</p>
+  <p>You don't deal with the seller directly; you deal with the <em>trusted third party.</em> And most importantly, they give you something the individual seller never could: <strong>a guarantee.</strong></p>
+  <p>It was simple but revolutionary — not in technology, but in <strong>trust.</strong></p>
+  <p>This was exactly what Akerlof, Spence, and Stiglitz had been trying to explain for decades: that markets don't fail because people are bad — they fail because information isn't equal.</p>
+  <p>Once you fix the flow of information, you fix the market.</p>
+
+  <h2>When economics meets creativity</h2>
+  <p>Watching that episode, I realized something I've always believed: sometimes the smartest economic solutions don't come from big governments or central banks. They come from small, local minds that understand how people think and trade.</p>
+  <p>By creating transparency, this entrepreneur rebuilt confidence in a market that many people had stopped trusting.</p>
+  <p>Maybe he never read a single academic paper in his life — but he instinctively solved the same problem that earned three professors a Nobel Prize in 2001.</p>
+  <p>And honestly, that night, I didn't feel like I had just watched a TV show. I felt like I had just seen a <em>theory come to life.</em></p>
+  <p>So yes, maybe I gave him free publicity in my thoughts — but some ideas deserve it. Because sometimes, economics isn't just about numbers — it's about <strong>trust, honesty, and the courage to make things clear.</strong> 🚗✨</p>
         <a class="back-link" href="../index.html#articles">← Back to Articles</a>
       </div>
     </article>
   </main>
+
   <footer>© 2026 Aissam Boudrouz. All rights reserved.</footer>
   <script src="../script.js"></script>
 </body>

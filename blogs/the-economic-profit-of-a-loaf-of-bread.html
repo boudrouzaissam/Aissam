@@ -3,29 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Economic Profit of a Loaf of Bread | Aissam Boudrouz</title>
-  <meta name="description" content="One sunny afternoon, I was walking home for lunch. It was one of those simple days — not good, not bad — just peacefully ordinary. The streets were quiet, and the air carried that faint smel..." />
+  <title>The Economic Profit of a Loaf of Bread — Aissam Boudrouz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
   <style>
-    body { background: #f8f5ee; }
-    .blog-page { max-width: 980px; margin: 0 auto; padding: 120px 24px 70px; }
-    .blog-hero { background: #fff; border-radius: 28px; overflow: hidden; box-shadow: 0 20px 55px rgba(15,32,50,.12); margin-bottom: 34px; }
-    .blog-hero img { width: 100%; height: 390px; object-fit: cover; display: block; }
-    .blog-header { padding: 36px; }
-    .blog-header .category { display: inline-block; margin-bottom: 14px; }
-    .blog-header h1 { font-family: "Playfair Display", serif; font-size: clamp(2.1rem, 5vw, 4rem); line-height: 1.05; margin-bottom: 16px; color: #14293d; }
-    .blog-meta { color: #6b7280; font-weight: 600; }
-    .blog-content { background: #fff; border-radius: 28px; padding: 42px; box-shadow: 0 16px 45px rgba(15,32,50,.08); }
-    .blog-content p { font-size: 1.08rem; line-height: 1.9; color: #243447; margin-bottom: 22px; }
-    .blog-content h2 { font-size: 1.55rem; margin: 38px 0 16px; color: #14293d; }
-    .back-link { display: inline-block; margin-top: 28px; font-weight: 700; color: #14293d; text-decoration: none; }
+    body {
+      background: #f8f5ee;
+    }
+    .blog-page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 120px 24px 70px;
+    }
+    .blog-hero {
+      background: #ffffff;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 20px 55px rgba(15, 32, 50, 0.12);
+      margin-bottom: 34px;
+    }
+    .blog-hero-img {
+      width: 100%;
+      height: 390px;
+      object-fit: cover;
+      display: block;
+      background: #14293d;
+    }
+    .blog-header {
+      padding: 36px;
+    }
+    .blog-header .category {
+      display: inline-block;
+      margin-bottom: 14px;
+    }
+    .blog-header h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.1rem, 5vw, 4rem);
+      line-height: 1.05;
+      margin-bottom: 16px;
+      color: #14293d;
+    }
+    .blog-meta {
+      color: #6b7280;
+      font-weight: 600;
+    }
+    .blog-content {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 42px;
+      box-shadow: 0 16px 45px rgba(15, 32, 50, 0.08);
+    }
+    .blog-content p {
+      font-size: 1.08rem;
+      line-height: 1.9;
+      color: #243447;
+      margin-bottom: 22px;
+    }
+    .blog-content h2 {
+      font-size: 1.55rem;
+      margin: 38px 0 16px;
+      color: #14293d;
+    }
+    .blog-content blockquote {
+      border-left: 4px solid #c6a269;
+      padding: 14px 22px;
+      margin: 24px 0;
+      background: #f8f5ee;
+      color: #243447;
+      font-style: italic;
+      border-radius: 12px;
+    }
+    .blog-content ul {
+      margin: 18px 0 24px 24px;
+      color: #243447;
+      line-height: 1.8;
+    }
+    .math-block {
+      background: #f8f5ee;
+      border: 1px solid #e8dcc3;
+      border-radius: 14px;
+      padding: 18px;
+      margin: 18px 0 24px;
+      text-align: center;
+      font-weight: 700;
+      color: #14293d;
+      font-size: 1.15rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 28px;
+      font-weight: 700;
+      color: #14293d;
+      text-decoration: none;
+    }
     @media (max-width: 700px) {
-      .blog-page { padding-top: 95px; }
-      .blog-hero img { height: 250px; }
-      .blog-header, .blog-content { padding: 26px; }
+      .blog-page {
+        padding-top: 95px;
+      }
+      .blog-hero-img {
+        height: 250px;
+      }
+      .blog-header, .blog-content {
+        padding: 26px;
+      }
     }
   </style>
 </head>
@@ -46,43 +128,47 @@
   <main class="blog-page">
     <article>
       <div class="blog-hero">
-        <img src="../images/blogs/the-economic-profit-of-a-loaf-of-bread.jpg" alt="The Economic Profit of a Loaf of Bread">
+        <img src="../images/blogs/the-economic-profit-of-a-loaf-of-bread.jpg" alt="The Economic Profit of a Loaf of Bread" class="blog-hero-img" onerror="this.style.display='none'">
         <div class="blog-header">
-          <span class="category">Everyday Economics · Risk Aversion</span>
+          <span class="category">Behavioral Economics · Decision Theory</span>
           <h1>The Economic Profit of a Loaf of Bread</h1>
           <p class="blog-meta">By Aissam Boudrouz · Book Chapter</p>
         </div>
       </div>
+
       <div class="blog-content">
-        <p>One sunny afternoon, I was walking home for lunch.<br>It was one of those simple days — not good, not bad — just peacefully ordinary. The streets were quiet, and the air carried that faint smell of warm bread coming from the bakery nearby.</p>
-        <p>As I turned the corner, I passed by the small grocery shop next to my building. I slowed down a little, thinking of home, of lunch waiting on the table. Then a thought came to me — a small, annoying one:</p>
-        <p>“Wait… do we still have bread at home?”</p>
-        <p>I stopped for a second. No one was home to call and check. It was just me, the warm sunlight, and the big question: to buy or not to buy?</p>
-        <h2>Page 1 – The bread dilemma</h2>
-        <p>Now, this wasn’t the first time it happened.<br>Almost every day, I bought bread on my way back, and almost every day, I found some already sitting on the counter. Then by the next morning, we’d throw away the old ones because they had gone hard.</p>
-        <p>But skipping it wasn’t always a good idea either.<br>On the days I didn’t buy any, I’d open the bread basket, find it empty, and have to go back out again — which I absolutely hate doing after getting comfortable at home.</p>
-        <p>So, there I was, standing in front of the store like a man facing a major life decision, holding an invisible calculator in my head.</p>
-        <p>That’s when my inner economist woke up.<br>You know that little voice — the rational one, the Homo Economicus we all carry inside, whispering about costs and benefits, even when it’s about something as ordinary as a loaf of bread.</p>
-        <h2>Page 2 – The quick calculation</h2>
-        <p>I started imagining the possibilities:</p>
-        <p>If I buy the bread and there’s already some at home, I’ll waste two loaves and two coins. Not the end of the world, but still annoying. Bread from the shop can’t really be kept — it hardens fast.</p>
-        <p>But if I don’t buy it and there’s none at home, I’ll have to go back out later. That means losing time, walking again under the sun, and spending the same two coins anyway.</p>
-        <p>And let’s be honest — I’m a little lazy.<br>If I were already at home and realized there was no bread, I’d probably ask someone else to get it and give them a small tip. Let’s say… five coins.</p>
-        <p>So the total loss in that case? Around seven coins.</p>
-        <p>My inner economist smiled.<br>Option A (buy now): risk losing 2 coins.<br>Option B (don’t buy): risk losing 7.</p>
-        <p>Even if both were equally likely, Option A clearly had the smaller risk.<br>So I took a deep breath, nodded like someone who just solved a serious life equation, and stepped into the shop.</p>
-        <h2>Page 3 – The invisible profit</h2>
-        <p>When I got home and opened the bread basket, there it was — two fresh loaves sitting quietly, waiting for me.</p>
-        <p>I laughed to myself.<br>“Well,” I thought, “that’s two coins gone… but at least I don’t have to go back out.”</p>
-        <p>Economically, that’s called risk aversion — choosing the safer path with the smaller potential loss. But it’s also something deeper: the quiet satisfaction of knowing you made the less annoying choice.</p>
-        <p>Some people think economics is only about money. But for me, that day, it was about peace of mind. The comfort of walking home without worrying, the calm of not second-guessing myself later.</p>
-        <p>That’s what economists call economic profit — the invisible gain you get when your decision brings more satisfaction than its alternatives.</p>
-        <p>So yes, I lost two coins and ended up with too much bread.<br>But I also bought certainty, calm, and an easy afternoon nap after lunch.</p>
-        <p>And honestly, that’s the kind of profit I’ll take any day. 🍞</p>
+        <p>One sunny afternoon, I was walking home for lunch. It was one of those simple days — not good, not bad — just peacefully ordinary. The streets were quiet, and the air carried that faint smell of warm bread coming from the bakery nearby.</p>
+  <p>As I turned the corner, I passed by the small grocery shop next to my building. I slowed down a little, thinking of home, of lunch waiting on the table. Then a thought came to me — a small, annoying one:</p>
+  <p><em>"Wait… do we still have bread at home?"</em></p>
+  <p>I stopped for a second. No one was home to call and check. It was just me, the warm sunlight, and the big question: <em>to buy or not to buy?</em></p>
+
+  <h2>The bread dilemma</h2>
+  <p>Now, this wasn't the first time it happened. Almost every day, I bought bread on my way back, and almost every day, I found some already sitting on the counter. Then by the next morning, we'd throw away the old ones because they had gone hard.</p>
+  <p>But skipping it wasn't always a good idea either. On the days I didn't buy any, I'd open the bread basket, find it empty, and have to go back out again — which I absolutely hate doing after getting comfortable at home.</p>
+  <p>So, there I was, standing in front of the store like a man facing a major life decision, holding an invisible calculator in my head.</p>
+  <p>That's when my <em>inner economist</em> woke up. You know that little voice — the rational one, the <em>Homo Economicus</em> we all carry inside, whispering about costs and benefits, even when it's about something as ordinary as a loaf of bread.</p>
+
+  <h2>The quick calculation</h2>
+  <p>I started imagining the possibilities:</p>
+  <p>If I buy the bread and there's already some at home, I'll waste two loaves and two coins. Not the end of the world, but still annoying. Bread from the shop can't really be kept — it hardens fast.</p>
+  <p>But if I don't buy it and there's none at home, I'll have to go back out later. That means losing time, walking again under the sun, and spending the same two coins anyway.</p>
+  <p>And let's be honest — I'm a little lazy. If I were already at home and realized there was no bread, I'd probably ask someone else to get it and give them a small tip. Let's say… five coins.</p>
+  <p>So the total loss in that case? Around seven coins.</p>
+  <p>My inner economist smiled. Option A (buy now): risk losing 2 coins. Option B (don't buy): risk losing 7. Even if both were equally likely, Option A clearly had the smaller risk. So I took a deep breath, nodded like someone who just solved a serious life equation, and stepped into the shop.</p>
+
+  <h2>The invisible profit</h2>
+  <p>When I got home and opened the bread basket, there it was — two fresh loaves sitting quietly, waiting for me.</p>
+  <p>I laughed to myself. <em>"Well,"</em> I thought, <em>"that's two coins gone… but at least I don't have to go back out."</em></p>
+  <p>Economically, that's called <strong>risk aversion</strong> — choosing the safer path with the smaller potential loss. But it's also something deeper: the quiet satisfaction of knowing you made the <em>less annoying</em> choice.</p>
+  <p>Some people think economics is only about money. But for me, that day, it was about <strong>peace of mind</strong>. The comfort of walking home without worrying, the calm of not second-guessing myself later.</p>
+  <p>That's what economists call <em>economic profit</em> — the invisible gain you get when your decision brings more satisfaction than its alternatives.</p>
+  <p>So yes, I lost two coins and ended up with too much bread. But I also bought certainty, calm, and an easy afternoon nap after lunch.</p>
+  <p>And honestly, that's the kind of profit I'll take any day. 🍞</p>
         <a class="back-link" href="../index.html#articles">← Back to Articles</a>
       </div>
     </article>
   </main>
+
   <footer>© 2026 Aissam Boudrouz. All rights reserved.</footer>
   <script src="../script.js"></script>
 </body>
